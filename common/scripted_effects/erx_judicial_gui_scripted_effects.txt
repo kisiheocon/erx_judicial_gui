@@ -1,0 +1,42 @@
+com_test_effect = {
+	set_variable = {
+		com_array_test^0 = 1
+	}
+}
+
+clear_judges_array_scripted_effect = {
+	clear_array = judges_list_array
+}
+
+add_judge_1 = {
+	add_to_array = { judges_list_array = 1 }
+}
+add_judge_2 = {
+	add_to_array = { judges_list_array = 2 }
+}
+
+add_judge_3 = {
+	add_to_array = { judges_list_array = 3 }
+}
+
+remove_judge_3 = {
+	remove_from_array = {
+		judges_list_array = 1
+	}
+}
+
+close_com_0 = {
+	set_variable = {
+		com_array_test^0 = 1
+	}
+}
+unlock_com_0 = {
+	set_variable = {
+		com_array_test^0 = 2
+	}
+}
+selected_com_0 = {
+	set_variable = {
+		com_array_test^0 = 3
+	}
+}

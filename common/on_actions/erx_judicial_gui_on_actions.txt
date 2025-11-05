@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			NCR = {
+				add_to_array = { judges_list_array = 1 }
+				add_to_array = { judges_list_array = 2 }
+				add_to_array = { judges_list_array = 3 }
+				add_to_array = { judges_list_array = 4 }
+				add_to_array = { judges_list_array = 5 }
+				add_to_array = { judges_list_array = 6 }
+				add_to_array = { judges_list_array = 7 }
+				add_to_array = { judges_list_array = 8 }
+				add_to_array = { judges_list_array = 9 }
+				add_to_array = { judges_list_array = 12 }
+				add_to_array = { judges_list_array = 10 }
+				add_to_array = { judges_list_array = 11 }
+			}
+		}
+	}
+}

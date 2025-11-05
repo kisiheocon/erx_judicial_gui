@@ -1,0 +1,22 @@
+spriteTypes = {
+	##Judges GUI
+	#Open Judicial Button
+	spriteType = {
+		name = "GFX_ERB_open_judicial_button"
+		texturefile = "gfx/interface/ERB_judicial_gui/usa_congress_logo.dds" #Placeholder
+	}
+	#Judges Portraits
+	spriteType = {
+		name = "GFX_ERB_judges_frame"
+		texturefile = "gfx/interface/ERB_judicial_gui/erb_judges_frame.dds" #Placeholder
+		noOfFrames = 12
+	}
+	
+	#Test Commonwealth
+	spriteType = {
+		name = "GFX_ERB_judicial_commonwealth_test"
+		texturefile = "gfx/interface/ERB_judicial_gui/speakers_portraits.dds"
+		noOfFrames = 3
+	}
+
+}

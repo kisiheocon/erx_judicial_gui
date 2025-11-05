@@ -1,0 +1,90 @@
+scripted_gui = {
+	#Button to open Judicial gui
+	judicial_open_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "judicial_open_window"
+
+		visible = {
+			original_tag = NCR #NCR for testing
+		}
+
+		effects = {
+			judicial_open_button_click = {
+				if = {
+					limit = { has_country_flag = show_judicial_gui_flag }
+					clr_country_flag = show_judicial_gui_flag
+				}
+				else = { set_country_flag = show_judicial_gui_flag }
+			}
+		}
+	}
+	#Judges List Tab
+	judicial_gui_judges_tab = {
+		context_type = player_context
+		#parent_window_name = "judicial_gui_judges_tab"
+		window_name = "judicial_gui_judges_container"
+
+		visible = { 
+			has_country_flag = show_judicial_gui_flag
+		}
+		dynamic_lists = {
+			judges_list_gridbox = {
+				array = judges_list_array
+				entry_container = judges_list_entry
+				index = judges_idx
+			}
+		}
+		effects = {
+			judges_list_button_click = {
+				set_variable = {
+					com_judge_array_test^0 = judges_list_array^judges_idx
+				}
+			}
+		}
+
+		triggers = { 
+			judges_list_portrait_visible = {
+				set_temp_variable = { judges_list_portrait_frame = judges_list_array^judges_idx }
+			}
+		}
+
+		properties = {
+			judges_list_portrait = {
+				image = [this.judges_list_portrait]
+				frame = judges_list_portrait_frame
+			}
+		}
+		effects = {
+
+		}
+	}
+	#Judicial Commonwealth Tab
+	judicial_gui_commonwealth_tab = {
+		context_type = player_context
+		window_name = "judicial_gui_commonwealth_container"
+
+		visible = { 
+			has_country_flag = show_judicial_gui_flag
+		}
+		triggers = {
+			judicial_gui_commonwealth_test_visible = {
+				set_temp_variable = { judicial_gui_commonwealth_test_frame = com_array_test^0 }
+			}
+			judges_list_portrait_test_visible = {
+				set_temp_variable = { judges_list_portrait_test_frame = com_judge_array_test^0 }
+			}
+		}
+
+		properties = {
+			judicial_gui_commonwealth_test = {
+				image = [this.judicial_gui_commonwealth_test]
+				frame = judicial_gui_commonwealth_test_frame
+			}
+			judges_list_portrait_test = {
+				image = [this.judges_list_portrait_test]
+				frame = judges_list_portrait_test_frame
+			}
+		}
+	}
+}
