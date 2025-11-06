@@ -28,7 +28,8 @@ guiTypes = {
 		buttonType = {
 			name = "judicial_close_button"
 			spriteType = "GFX_closebutton"
-			position = { x = 25 y = 20 }
+			position = { x = 15 y = 17 }
+			scale = 1.5
 			pdx_tooltip = "DIPLOMACY_CLOSE"
 			shortcut = "ESCAPE"
 		}
@@ -329,6 +330,7 @@ guiTypes = {
 			position = { x = 5 y = 15 }
 			spriteType = "GFX_ERB_judges_frame"
 			frame = 1
+			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "judges_list_name"
