@@ -25,18 +25,19 @@ remove_judge_3 = {
 	}
 }
 
-close_com_0 = {
+selected_com_1 = {
 	set_variable = {
-		com_array_test^0 = 1
+		com_array_test^12 = 1
 	}
 }
-unlock_com_0 = {
+selected_com_2 = {
 	set_variable = {
-		com_array_test^0 = 2
+		com_array_test^12 = 2
 	}
 }
-selected_com_0 = {
+
+add_judge_8_to_1 = {
 	set_variable = {
-		com_array_test^0 = 3
+		judicial_gui_com_judge_array^12 = 8
 	}
 }

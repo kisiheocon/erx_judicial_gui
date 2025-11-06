@@ -50,13 +50,7 @@ scripted_gui = {
 		}
 
 		properties = {
-			judges_list_portrait = {
-				image = [this.judges_list_portrait]
-				frame = judges_list_portrait_frame
-			}
-		}
-		effects = {
-
+			judges_list_portrait = { frame = judges_list_portrait_frame }
 		}
 	}
 	#Judicial Commonwealth Tab
@@ -68,23 +62,119 @@ scripted_gui = {
 			has_country_flag = show_judicial_gui_flag
 		}
 		triggers = {
-			judicial_gui_commonwealth_test_visible = {
-				set_temp_variable = { judicial_gui_commonwealth_test_frame = com_array_test^0 }
-			}
-			judges_list_portrait_test_visible = {
-				set_temp_variable = { judges_list_portrait_test_frame = com_judge_array_test^0 }
-			}
+			##Commonwealths
+			#Sierra
+			judicial_gui_com_sierra_visible = { set_temp_variable = { judicial_gui_com_sierra_frame = com_array_test^0 } }
+			#Cascadia
+			judicial_gui_com_cascadia_visible = { set_temp_variable = { judicial_gui_com_cascadia_frame = com_array_test^1 } }
+			#Fourstates
+			judicial_gui_com_fourstate_visible = { set_temp_variable = { judicial_gui_com_fourstate_frame = com_array_test^2 } }
+			#Northern
+			judicial_gui_com_northern_visible = { set_temp_variable = { judicial_gui_com_northern_frame = com_array_test^3 } }
+			#Lone Star
+			judicial_gui_com_lonestar_visible = { set_temp_variable = { judicial_gui_com_lonestar_frame = com_array_test^4 } }
+			#Lone Star
+			judicial_gui_com_greatlakes_visible = { set_temp_variable = { judicial_gui_com_greatlakes_frame = com_array_test^5 } }
+			#Midwest
+			judicial_gui_com_midwest_visible = { set_temp_variable = { judicial_gui_com_midwest_frame = com_array_test^6 } }
+			#Appalachian
+			judicial_gui_com_appalachian_visible = { set_temp_variable = { judicial_gui_com_appalachian_frame = com_array_test^7 } }
+			#Empire
+			judicial_gui_com_empire_visible = { set_temp_variable = { judicial_gui_com_empire_frame = com_array_test^8 } }
+			#New England
+			judicial_gui_com_england_visible = { set_temp_variable = { judicial_gui_com_england_frame = com_array_test^9 } }
+			#Gulf
+			judicial_gui_com_gulf_visible = { set_temp_variable = { judicial_gui_com_gulf_frame = com_array_test^10 } }
+			#Dixie
+			judicial_gui_com_dixie_visible = { set_temp_variable = { judicial_gui_com_dixie_frame = com_array_test^11 } }
+			#Columbia
+			judicial_gui_com_columbia_visible = { set_temp_variable = { judicial_gui_com_columbia_frame = com_array_test^12 } }
+
+			##Judges
+			#Sierra
+			judicial_gui_com_sierra_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_sierra_judge_portrait_frame = judicial_gui_com_judge_array^0 } }
+			#Cascadia
+			judicial_gui_com_cascadia_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_cascadia_judge_portrait_frame = judicial_gui_com_judge_array^1 } }
+			#Fourstate
+			judicial_gui_com_fourstate_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_fourstate_judge_portrait_frame = judicial_gui_com_judge_array^2 } }
+			#Northern
+			judicial_gui_com_northern_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_northern_judge_portrait_frame = judicial_gui_com_judge_array^3 } }
+			#Lone Star
+			judicial_gui_com_lonestar_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_lonestar_judge_portrait_frame = judicial_gui_com_judge_array^4 } }
+			#Great Lakes
+			judicial_gui_com_greatlakes_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_greatlakes_judge_portrait_frame = judicial_gui_com_judge_array^5 } }
+			#Midwest
+			judicial_gui_com_midwest_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_midwest_judge_portrait_frame = judicial_gui_com_judge_array^6 } }
+			#Appalachian
+			judicial_gui_com_appalachian_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_appalachian_judge_portrait_frame = judicial_gui_com_judge_array^7 } }
+			#Empire
+			judicial_gui_com_empire_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_empire_judge_portrait_frame = judicial_gui_com_judge_array^8 } }
+			#New England
+			judicial_gui_com_england_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_england_judge_portrait_frame = judicial_gui_com_judge_array^9 } }
+			#Gulf
+			judicial_gui_com_gulf_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_gulf_judge_portrait_frame = judicial_gui_com_judge_array^10 } }
+			#Dixie
+			judicial_gui_com_dixie_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_dixie_judge_portrait_frame = judicial_gui_com_judge_array^11 } }
+			#Columbia
+			judicial_gui_com_columbia_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_columbia_judge_portrait_frame = judicial_gui_com_judge_array^12 } }
 		}
 
 		properties = {
-			judicial_gui_commonwealth_test = {
-				image = [this.judicial_gui_commonwealth_test]
-				frame = judicial_gui_commonwealth_test_frame
-			}
-			judges_list_portrait_test = {
-				image = [this.judges_list_portrait_test]
-				frame = judges_list_portrait_test_frame
-			}
+			##Commonwealths
+			#Sierra
+			judicial_gui_com_sierra = { frame = judicial_gui_com_sierra_frame }
+			#Cascadia
+			judicial_gui_com_cascadia = { frame = judicial_gui_com_cascadia_frame }
+			#Fourstates
+			judicial_gui_com_fourstate = { frame = judicial_gui_com_fourstate_frame }
+			#Northern
+			judicial_gui_com_northern = { frame = judicial_gui_com_northern_frame }
+			#Lone Star
+			judicial_gui_com_lonestar = { frame = judicial_gui_com_lonestar_frame }
+			#Great Lakes
+			judicial_gui_com_greatlakes = { frame = judicial_gui_com_greatlakes_frame }
+			#Midwest
+			judicial_gui_com_midwest = { frame = judicial_gui_com_midwest_frame }
+			#Appalachian
+			judicial_gui_com_appalachian = { frame = judicial_gui_com_appalachian_frame }
+			#Empire
+			judicial_gui_com_empire = { frame = judicial_gui_com_empire_frame }
+			#New England
+			judicial_gui_com_england = { frame = judicial_gui_com_england_frame }
+			#Gulf
+			judicial_gui_com_gulf = { frame = judicial_gui_com_gulf_frame }
+			#Dixie
+			judicial_gui_com_dixie = { frame = judicial_gui_com_dixie_frame }
+			#Columbia
+			judicial_gui_com_columbia = { frame = judicial_gui_com_columbia_frame }
+
+			##Judges
+			#Sierra
+			judicial_gui_com_sierra_judge_portrait = { frame = judicial_gui_com_sierra_judge_portrait_frame }
+			#Cascadia
+			judicial_gui_com_cascadia_judge_portrait = { frame = judicial_gui_com_cascadia_judge_portrait_frame }
+			#Fourstate
+			judicial_gui_com_fourstate_judge_portrait = { frame = judicial_gui_com_fourstate_judge_portrait_frame }
+			#Northern
+			judicial_gui_com_northern_judge_portrait = { frame = judicial_gui_com_northern_judge_portrait_frame }
+			#Lone Star
+			judicial_gui_com_lonestar_judge_portrait = { frame = judicial_gui_com_lonestar_judge_portrait_frame }
+			#Great Lakes
+			judicial_gui_com_greatlakes_judge_portrait = { frame = judicial_gui_com_greatlakes_judge_portrait_frame }
+			#Midwest
+			judicial_gui_com_midwest_judge_portrait = { frame = judicial_gui_com_midwest_judge_portrait_frame }
+			#Appalachian
+			judicial_gui_com_appalachian_judge_portrait = { frame = judicial_gui_com_appalachian_judge_portrait_frame }
+			#Empire
+			judicial_gui_com_empire_judge_portrait = { frame = judicial_gui_com_empire_judge_portrait_frame }
+			#England
+			judicial_gui_com_england_judge_portrait = { frame = judicial_gui_com_england_judge_portrait_frame }
+			#Gulf
+			judicial_gui_com_gulf_judge_portrait = { frame = judicial_gui_com_gulf_judge_portrait_frame }
+			#Dixie
+			judicial_gui_com_dixie_judge_portrait = { frame = judicial_gui_com_dixie_judge_portrait_frame }
+			#Dixie
+			judicial_gui_com_columbia_judge_portrait = { frame = judicial_gui_com_columbia_judge_portrait_frame }
 		}
 	}
 }

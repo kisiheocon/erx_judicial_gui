@@ -4,6 +4,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ERB_open_judicial_button"
 		texturefile = "gfx/interface/ERB_judicial_gui/usa_congress_logo.dds" #Placeholder
+		transparencecheck = yes
 	}
 	#Judges Portraits
 	spriteType = {
@@ -11,12 +12,113 @@ spriteTypes = {
 		texturefile = "gfx/interface/ERB_judicial_gui/erb_judges_frame.dds" #Placeholder
 		noOfFrames = 12
 	}
-	
-	#Test Commonwealth
+	#Judge tab
 	spriteType = {
-		name = "GFX_ERB_judicial_commonwealth_test"
-		texturefile = "gfx/interface/ERB_judicial_gui/speakers_portraits.dds"
-		noOfFrames = 3
+		name = "GFX_ERB_judges_tab"
+		texturefile = "gfx/interface/ERB_judicial_gui/judges_tab.dds"
+		transparencecheck = yes
 	}
-
+	#Fire Button
+	spriteType = {
+		name = "GFX_ERB_judge_fire_button"
+		texturefile = "gfx/interface/ERB_judicial_gui/judge_fire_button.dds"
+		transparencecheck = yes
+	}
+	
+	#Background
+	spriteType = {
+		name = "GFX_ERB_erb_judicial_com_background"
+		texturefile = "gfx/interface/ERB_judicial_gui/erb_judicial_com_background.dds"
+	}
+	#Sierra
+	spriteType = {
+		name = "GFX_ERB_erb_com_sierra"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_sierra.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Cascadia
+	spriteType = {
+		name = "GFX_ERB_erb_com_cascadia"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_cascadia.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Fourstate
+	spriteType = {
+		name = "GFX_ERB_erb_com_fourstate"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_fourstate.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Northern
+	spriteType = {
+		name = "GFX_ERB_erb_com_northern"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_northern.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Lone Star
+	spriteType = {
+		name = "GFX_ERB_erb_com_lonestar"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_lonestar.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Great Lakes
+	spriteType = {
+		name = "GFX_ERB_erb_com_greatlakes"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_greatlakes.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Midwest
+	spriteType = {
+		name = "GFX_ERB_erb_com_midwest"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_midwest.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Appalachian
+	spriteType = {
+		name = "GFX_ERB_erb_com_appalachian"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_appalachian.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Empire
+	spriteType = {
+		name = "GFX_ERB_erb_com_empire"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_empire.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#New England
+	spriteType = {
+		name = "GFX_ERB_erb_com_england"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_england.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Gulf
+	spriteType = {
+		name = "GFX_ERB_erb_com_gulf"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_gulf.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Dixie
+	spriteType = {
+		name = "GFX_ERB_erb_com_dixie"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_dixie.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	#Columbia
+	spriteType = {
+		name = "GFX_ERB_erb_com_columbia"
+		texturefile = "gfx/interface/ERB_judicial_gui/com_columbia.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
 }

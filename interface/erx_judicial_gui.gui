@@ -14,44 +14,275 @@ guiTypes = {
 			pdx_tooltip = "open"
 		}
 	}
+
 	#Judicial Commonwealth Container
 	containerWindowType = {
 		name = "judicial_gui_commonwealth_container"
-		position = { x=900 y=200 }
+		position = { x=550 y=200 }
 		size = { width = 300 height = 800 }
-		#clipping = no
-
-		buttonType = {
-			name = "judicial_gui_commonwealth_test"
+		iconType = {
+			name = "judifical_gui_com_background"
+			spriteType = GFX_ERB_erb_judicial_com_background
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_ERB_judicial_commonwealth_test"
+		}
+		instantTextboxType = {
+			name = "judges_list_name"
+			position = { x = 120 y = 35 }
+			text = "Federal Judiciary Of The United States"
+			font = "monofont_24"
+			format = center
+			maxWidth = 600
+			multiline = no
+			#alwaystransparent = yes
+		}
+		buttonType = {
+			name = "judicial_gui_com_sierra"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_sierra"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_cascadia"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_cascadia"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_fourstate"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_fourstate"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_northern"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_northern"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_lonestar"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_lonestar"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_greatlakes"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_greatlakes"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_midwest"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_midwest"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_appalachian"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_appalachian"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_empire"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_empire"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_england"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_england"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_gulf"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_gulf"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_dixie"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_dixie"
+			frame = 1
+		}
+		buttonType = {
+			name = "judicial_gui_com_columbia"
+			position = { x = 10 y = 80 }
+			spriteType = "GFX_ERB_erb_com_columbia"
 			frame = 1
 		}
 
+
 		iconType = {
-			name = "judges_list_portrait_test"
-			position = { x = 40 y = 55 }
+			name = "judicial_gui_com_sierra_judge_portrait"
+			position = { x = 80 y = 270 }
 			spriteType = "GFX_ERB_judges_frame"
 			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_cascadia_judge_portrait"
+			position = { x = 100 y = 130 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_fourstate_judge_portrait"
+			position = { x = 216 y = 322 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_northern_judge_portrait"
+			position = { x = 270 y = 150 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_lonestar_judge_portrait"
+			position = { x = 370 y = 410 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_greatlakes_judge_portrait"
+			position = { x = 495 y = 195 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_midwest_judge_portrait"
+			position = { x = 392 y = 290 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_appalachian_judge_portrait"
+			position = { x = 590 y = 280 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_empire_judge_portrait"
+			position = { x = 629 y = 150 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_england_judge_portrait"
+			position = { x = 685 y = 100 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_gulf_judge_portrait"
+			position = { x = 535 y = 415 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_dixie_judge_portrait"
+			position = { x = 625 y = 375 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "judicial_gui_com_columbia_judge_portrait"
+			position = { x = 759 y = 275 }
+			spriteType = "GFX_ERB_judges_frame"
+			frame = 1
+			alwaystransparent = yes
 		}
 	}
 
 	#Judge List Container
 	containerWindowType = {
         name = "judicial_gui_judges_container"
-        position = { x = 600 y = 200}
-		clipping = yes
-		moveable = yes
+        position = { x = 1362 y = 202}
+		clipping = no
 		
 		size = { width = 300 height = 800 }
 
+		iconType = {
+			name = "judges_tab_container"
+			spriteType = GFX_ERB_judges_tab
+			position = { x = 0 y = 0 }
+		}
+
+		containerWindowType = {
+			name = "judge_current"
+			position = { x = 250 y = 80 }
+			size = { width = 150 height = 70 }
+			instantTextboxType = {
+				name = "judge_current_com_name"
+				position = { x = 4 y = 0 }
+				text = "Great Northern Commonwealth"
+				font = "monofont_16"
+				format = center
+				maxWidth = 125
+				multiline = yes
+				#alwaystransparent = yes
+			}
+			iconType = {
+				name = "judge_current_portrait"
+				position = { x = 5 y = 40 }
+				spriteType = "GFX_ERB_judges_frame"
+				frame = 1
+			}
+			instantTextboxType = {
+				name = "judge_current_name"
+				position = { x = 48 y = 43 }
+				text = "Name"
+				font = "monofont_16"
+				format = center
+				maxWidth = 80
+				multiline = no
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "judge_current_party_name"
+				position = { x = 48 y = 70 }
+				text = "Party"
+				font = "monofont_16"
+				format = center
+				maxWidth = 80
+				multiline = no
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "judge_current_fire_button"
+				position = { x = 8 y = 100 }
+				spriteType = "GFX_ERB_judge_fire_button"
+			}
+			instantTextboxType = {
+				name = "judge_current_fire_text"
+				position = { x = 46 y = 107 }
+				text = "Fires Judge"
+				font = "monofont_16"
+				format = left
+				maxWidth = 80
+				multiline = no
+				alwaystransparent = yes
+			}
+		}
+
 		containerWindowType = {
 			name = "judges_window"
-			position = { x = 0 y = 0 }
-			#show_position = { x = 0 y = 20 }
-			#show_animation_type = decelerated
-			#hide_animation_type = accelerated
-			#animation_time = 500
+			position = { x = 95 y = 224 }
 			clipping = yes
 			size = { width = 295 height = 400 }
 			margin = { left = 0 right = 23 top = 13 bottom = 15 }
@@ -64,7 +295,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				position = { x = 50 y = 0 }
+				position = { x = 48 y = 0 }
 				name = "judges_list_gridbox"
 				slotsize = { width = 130 height = 85 }
 				max_slots_horizontal = 2
@@ -82,7 +313,7 @@ guiTypes = {
 			name = "judges_list_button"
 			spriteType = "GFX_tiled_header_1"
 			position = { x = 0 y = 0}
-			size = { width = 120 height = 80 }
+			size = { width = 125 height = 80 }
 			#pdx_tooltip = law_name_scripted # The name of the Entry/Law
 			#pdx_tooltip_delayed = act_list_button_tt # The name of the Description / Show of the Idea.
 		}
@@ -94,21 +325,21 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "judges_list_name"
-			position = { x = 60 y = 16 }
-			text = "Name" # The name of the judge
+			position = { x = 48 y = 16 }
+			text = "Name"
 			font = "monofont_16"
-			format = left
-			maxWidth = 210
+			format = center
+			maxWidth = 70
 			multiline = no
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "judges_list_party_name"
-			position = { x = 60 y = 40 }
-			text = "Party" # The name of the Entry/Law
+			position = { x = 48 y = 43 }
+			text = "Party"
 			font = "monofont_16"
-			format = left
-			maxWidth = 210
+			format = center
+			maxWidth = 70
 			multiline = no
 			alwaystransparent = yes
 		}
