@@ -27,6 +27,7 @@ scripted_gui = {
 
 		visible = { 
 			has_country_flag = show_judicial_gui_flag
+			NOT = { check_variable = { judicial_gui_selected_com_var = 13 } }
 		}
 		dynamic_lists = {
 			judges_list_gridbox = {
@@ -37,19 +38,30 @@ scripted_gui = {
 		}
 		effects = {
 			judges_list_button_click = {
-				set_variable = {
-					com_judge_array_test^0 = judges_list_array^judges_idx
-				}
+				set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
+				remove_from_array = { judges_list_array = judges_list_array^judges_idx }
+			}
+			judge_current_fire_button_click = {
+				add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
+				set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
 			}
 		}
 
-		triggers = { 
-			judges_list_portrait_visible = {
-				set_temp_variable = { judges_list_portrait_frame = judges_list_array^judges_idx }
+		triggers = {
+			judges_list_portrait_visible = { set_temp_variable = { judges_list_portrait_frame = judges_list_array^judges_idx } }
+			judge_current_portrait_visible = { set_temp_variable = { judge_current_portrait_frame = judicial_gui_com_judge_array^judicial_gui_selected_com_var } }
+			judges_list_button_click_enabled = {
+				NOT = { check_variable = { judicial_gui_selected_com_var = 0 } }
+				check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
+			}
+			judge_current_fire_button_click_enabled = {
+				NOT = { check_variable = { judicial_gui_selected_com_var = 0 } }
+				NOT = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } }
 			}
 		}
 
 		properties = {
+			judge_current_portrait = { frame = judge_current_portrait_frame }
 			judges_list_portrait = { frame = judges_list_portrait_frame }
 		}
 	}
@@ -61,34 +73,219 @@ scripted_gui = {
 		visible = { 
 			has_country_flag = show_judicial_gui_flag
 		}
+		effects = {
+			judicial_close_button_click = { clr_country_flag = show_judicial_gui_flag }
+			judicial_gui_com_sierra_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 0 } }
+			}
+			judicial_gui_com_cascadia_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 1 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 1 } }
+			}
+			judicial_gui_com_fourstate_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 2 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 2 } }
+			}
+			judicial_gui_com_northern_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 3 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 3 } }
+			}
+			judicial_gui_com_lonestar_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 4 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 4 } }
+			}
+			judicial_gui_com_greatlakes_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 5 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 5 } }
+			}
+			judicial_gui_com_midwest_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 6 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 6 } }
+			}
+			judicial_gui_com_appalachian_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 7 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 7 } }
+			}
+			judicial_gui_com_empire_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 8 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 8 } }
+			}
+			judicial_gui_com_england_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 9 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 9 } }
+			}
+			judicial_gui_com_gulf_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 10 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 10 } }
+			}
+			judicial_gui_com_dixie_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 11 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 11 } }
+			}
+			judicial_gui_com_columbia_click = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 12 } }
+					set_variable = { judicial_gui_selected_com_var = 13 } 
+				}
+				else = { set_variable = { judicial_gui_selected_com_var = 12 } }
+			}
+		}
 		triggers = {
 			##Commonwealths
 			#Sierra
-			judicial_gui_com_sierra_visible = { set_temp_variable = { judicial_gui_com_sierra_frame = com_array_test^0 } }
+			judicial_gui_com_sierra_visible = {
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 0  } }
+					set_temp_variable = {  judicial_gui_com_sierra_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_sierra_frame = 1 } }
+			}
+			judicial_gui_com_sierra_click_enabled = { NOT = { check_variable = { erx_common_seat_random^0 = 0 } } }
 			#Cascadia
-			judicial_gui_com_cascadia_visible = { set_temp_variable = { judicial_gui_com_cascadia_frame = com_array_test^1 } }
+			judicial_gui_com_cascadia_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 1 } }
+					set_temp_variable = {  judicial_gui_com_cascadia_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_cascadia_frame = 1 } } 
+			}
+			judicial_gui_com_cascadia_click_enabled = { NOT = { check_variable = { erx_common_seat_random^1 = 0 } } }
 			#Fourstates
-			judicial_gui_com_fourstate_visible = { set_temp_variable = { judicial_gui_com_fourstate_frame = com_array_test^2 } }
+			judicial_gui_com_fourstate_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 2 } }
+					set_temp_variable = {  judicial_gui_com_fourstate_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_fourstate_frame = 1 } }
+			}
+			judicial_gui_com_fourstate_click_enabled = { NOT = { check_variable = { erx_common_seat_random^2 = 0 } } }
 			#Northern
-			judicial_gui_com_northern_visible = { set_temp_variable = { judicial_gui_com_northern_frame = com_array_test^3 } }
+			judicial_gui_com_northern_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 3 } }
+					set_temp_variable = {  judicial_gui_com_northern_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_northern_frame = 1 } }
+			}
+			judicial_gui_com_northern_click_enabled = { NOT = { check_variable = { erx_common_seat_random^3 = 0 } } }
 			#Lone Star
-			judicial_gui_com_lonestar_visible = { set_temp_variable = { judicial_gui_com_lonestar_frame = com_array_test^4 } }
-			#Lone Star
-			judicial_gui_com_greatlakes_visible = { set_temp_variable = { judicial_gui_com_greatlakes_frame = com_array_test^5 } }
+			judicial_gui_com_lonestar_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 4 } }
+					set_temp_variable = {  judicial_gui_com_lonestar_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_lonestar_frame = 1 } }
+			}
+			judicial_gui_com_lonestar_click_enabled = { NOT = { check_variable = { erx_common_seat_random^4 = 0 } } }
+			#Great Lakes
+			judicial_gui_com_greatlakes_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 5 } }
+					set_temp_variable = {  judicial_gui_com_greatlakes_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_greatlakes_frame = 1 } }
+			}
+			judicial_gui_com_greatlakes_click_enabled = { NOT = { check_variable = { erx_common_seat_random^5 = 0 } } }
 			#Midwest
-			judicial_gui_com_midwest_visible = { set_temp_variable = { judicial_gui_com_midwest_frame = com_array_test^6 } }
+			judicial_gui_com_midwest_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 6 } }
+					set_temp_variable = {  judicial_gui_com_midwest_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_midwest_frame = 1 } }
+			}
+			judicial_gui_com_midwest_click_enabled = { NOT = { check_variable = { erx_common_seat_random^6 = 0 } } }
 			#Appalachian
-			judicial_gui_com_appalachian_visible = { set_temp_variable = { judicial_gui_com_appalachian_frame = com_array_test^7 } }
+			judicial_gui_com_appalachian_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 7 } }
+					set_temp_variable = {  judicial_gui_com_appalachian_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_appalachian_frame = 1 } }
+			}
+			judicial_gui_com_appalachian_click_enabled = { NOT = { check_variable = { erx_common_seat_random^7 = 0 } } }
 			#Empire
-			judicial_gui_com_empire_visible = { set_temp_variable = { judicial_gui_com_empire_frame = com_array_test^8 } }
+			judicial_gui_com_empire_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 8 } }
+					set_temp_variable = {  judicial_gui_com_empire_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_empire_frame = 1 } }
+			}
+			judicial_gui_com_empire_click_enabled = { NOT = { check_variable = { erx_common_seat_random^8 = 0 } } }
 			#New England
-			judicial_gui_com_england_visible = { set_temp_variable = { judicial_gui_com_england_frame = com_array_test^9 } }
+			judicial_gui_com_england_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 9 } }
+					set_temp_variable = {  judicial_gui_com_england_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_england_frame = 1 } }
+			}
+			judicial_gui_com_england_click_enabled = { NOT = { check_variable = { erx_common_seat_random^9 = 0 } } }
 			#Gulf
-			judicial_gui_com_gulf_visible = { set_temp_variable = { judicial_gui_com_gulf_frame = com_array_test^10 } }
+			judicial_gui_com_gulf_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 10 } }
+					set_temp_variable = {  judicial_gui_com_gulf_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_gulf_frame = 1 } }
+			}
+			judicial_gui_com_gulf_click_enabled = { NOT = { check_variable = { erx_common_seat_random^10 = 0 } } }
 			#Dixie
-			judicial_gui_com_dixie_visible = { set_temp_variable = { judicial_gui_com_dixie_frame = com_array_test^11 } }
+			judicial_gui_com_dixie_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 11 } }
+					set_temp_variable = {  judicial_gui_com_dixie_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_dixie_frame = 1 } }
+			}
+			judicial_gui_com_dixie_click_enabled = { NOT = { check_variable = { erx_common_seat_random^11 = 0 } } }
 			#Columbia
-			judicial_gui_com_columbia_visible = { set_temp_variable = { judicial_gui_com_columbia_frame = com_array_test^12 } }
+			judicial_gui_com_columbia_visible = { 
+				if = {
+					limit = { check_variable = { judicial_gui_selected_com_var = 12 } }
+					set_temp_variable = {  judicial_gui_com_columbia_frame = 2 } 
+				}
+				else = { set_temp_variable = {  judicial_gui_com_columbia_frame = 1 } }
+			}
+			judicial_gui_com_columbia_click_enabled = { NOT = { check_variable = { erx_common_seat_random^12 = 0 } } }
 
 			##Judges
 			#Sierra

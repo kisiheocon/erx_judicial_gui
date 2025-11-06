@@ -36,8 +36,69 @@ selected_com_2 = {
 	}
 }
 
+set_up_com_1 = {
+	set_variable = { erx_common_seat_random^1 = 1 }
+}
+
+set_up_com_all = {
+	set_variable = { erx_common_seat_random^0 = 1 }
+	set_variable = { erx_common_seat_random^1 = 1 }
+	set_variable = { erx_common_seat_random^2 = 1 }
+	set_variable = { erx_common_seat_random^3 = 1 }
+	set_variable = { erx_common_seat_random^4 = 1 }
+	set_variable = { erx_common_seat_random^5 = 1 }
+	set_variable = { erx_common_seat_random^6 = 1 }
+	set_variable = { erx_common_seat_random^7 = 1 }
+	set_variable = { erx_common_seat_random^8 = 1 }
+	set_variable = { erx_common_seat_random^9 = 1 }
+	set_variable = { erx_common_seat_random^10 = 1 }
+	set_variable = { erx_common_seat_random^11 = 1 }
+	set_variable = { erx_common_seat_random^12 = 1 }
+}
+close_com_all = {
+	set_variable = { erx_common_seat_random^0 = 0 }
+	set_variable = { erx_common_seat_random^1 = 0 }
+	set_variable = { erx_common_seat_random^2 = 0 }
+	set_variable = { erx_common_seat_random^3 = 0 }
+	set_variable = { erx_common_seat_random^4 = 0 }
+	set_variable = { erx_common_seat_random^5 = 0 }
+	set_variable = { erx_common_seat_random^6 = 0 }
+	set_variable = { erx_common_seat_random^7 = 0 }
+	set_variable = { erx_common_seat_random^8 = 0 }
+	set_variable = { erx_common_seat_random^9 = 0 }
+	set_variable = { erx_common_seat_random^10 = 0 }
+	set_variable = { erx_common_seat_random^11 = 0 }
+	set_variable = { erx_common_seat_random^12 = 0 }
+}
+
+clear_com_judges = {
+	set_variable = { judicial_gui_com_judge_array^0 = 1 }
+	set_variable = { judicial_gui_com_judge_array^1 = 1 }
+	set_variable = { judicial_gui_com_judge_array^2 = 1 }
+	set_variable = { judicial_gui_com_judge_array^3 = 1 }
+	set_variable = { judicial_gui_com_judge_array^4 = 1 }
+	set_variable = { judicial_gui_com_judge_array^5 = 1 }
+	set_variable = { judicial_gui_com_judge_array^6 = 1 }
+	set_variable = { judicial_gui_com_judge_array^7 = 1 }
+	set_variable = { judicial_gui_com_judge_array^8 = 1 }
+	set_variable = { judicial_gui_com_judge_array^9 = 1 }
+	set_variable = { judicial_gui_com_judge_array^10 = 1 }
+	set_variable = { judicial_gui_com_judge_array^11 = 1 }
+	set_variable = { judicial_gui_com_judge_array^12 = 1 }
+}
+
+close_com_1 = {
+	set_variable = {
+		erx_common_seat_random^1 = 0
+	}
+}
+
 add_judge_8_to_1 = {
 	set_variable = {
 		judicial_gui_com_judge_array^12 = 8
 	}
+}
+
+select_sierra = {
+	set_variable = { judicial_gui_selected_com_var = 0 }
 }

@@ -2,7 +2,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			NCR = {
-				add_to_array = { judges_list_array = 1 }
+				#add_to_array = { judges_list_array = 1 }
 				add_to_array = { judges_list_array = 2 }
 				add_to_array = { judges_list_array = 3 }
 				add_to_array = { judges_list_array = 4 }
@@ -14,6 +14,20 @@ on_actions = {
 				add_to_array = { judges_list_array = 12 }
 				add_to_array = { judges_list_array = 10 }
 				add_to_array = { judges_list_array = 11 }
+				set_variable = { judicial_gui_selected_com_var = 13 }
+				set_variable = { judicial_gui_com_judge_array^0 = 1 }
+				set_variable = { judicial_gui_com_judge_array^1 = 1 }
+				set_variable = { judicial_gui_com_judge_array^2 = 1 }
+				set_variable = { judicial_gui_com_judge_array^3 = 1 }
+				set_variable = { judicial_gui_com_judge_array^4 = 1 }
+				set_variable = { judicial_gui_com_judge_array^5 = 1 }
+				set_variable = { judicial_gui_com_judge_array^6 = 1 }
+				set_variable = { judicial_gui_com_judge_array^7 = 1 }
+				set_variable = { judicial_gui_com_judge_array^8 = 1 }
+				set_variable = { judicial_gui_com_judge_array^9 = 1 }
+				set_variable = { judicial_gui_com_judge_array^10 = 1 }
+				set_variable = { judicial_gui_com_judge_array^11 = 1 }
+				set_variable = { judicial_gui_com_judge_array^12 = 1 }
 			}
 		}
 	}

@@ -25,8 +25,15 @@ guiTypes = {
 			spriteType = GFX_ERB_erb_judicial_com_background
 			position = { x = 0 y = 0 }
 		}
+		buttonType = {
+			name = "judicial_close_button"
+			spriteType = "GFX_closebutton"
+			position = { x = 25 y = 20 }
+			pdx_tooltip = "DIPLOMACY_CLOSE"
+			shortcut = "ESCAPE"
+		}
 		instantTextboxType = {
-			name = "judges_list_name"
+			name = "judicial_gui_name"
 			position = { x = 120 y = 35 }
 			text = "Federal Judiciary Of The United States"
 			font = "monofont_24"
@@ -229,12 +236,12 @@ guiTypes = {
 			instantTextboxType = {
 				name = "judge_current_com_name"
 				position = { x = 4 y = 0 }
-				text = "Great Northern Commonwealth"
+				text = judicial_current_com_name_scripted
 				font = "monofont_16"
 				format = center
 				maxWidth = 125
 				multiline = yes
-				#alwaystransparent = yes
+				alwaystransparent = yes
 			}
 			iconType = {
 				name = "judge_current_portrait"
