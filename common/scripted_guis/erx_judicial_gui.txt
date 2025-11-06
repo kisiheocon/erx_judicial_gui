@@ -22,7 +22,6 @@ scripted_gui = {
 	#Judges List Tab
 	judicial_gui_judges_tab = {
 		context_type = player_context
-		#parent_window_name = "judicial_gui_judges_tab"
 		window_name = "judicial_gui_judges_container"
 
 		visible = { 

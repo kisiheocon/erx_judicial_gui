@@ -27,6 +27,17 @@ on_actions = {
 				set_variable = { judicial_gui_com_judge_array^10 = 1 }
 				set_variable = { judicial_gui_com_judge_array^11 = 1 }
 				set_variable = { judicial_gui_com_judge_array^12 = 1 }
+				add_to_array = { judges_party_people_array = 4 }
+				add_to_array = { judges_party_intellectuals_array = 3 }
+				add_to_array = { judges_party_elites_array = 9 }
+				add_to_array = { judges_party_ruler_array = 2 }
+				add_to_array = { judges_party_ruler_array = 5 }
+				add_to_array = { judges_party_ruler_array = 6 }
+				add_to_array = { judges_party_ruler_array = 7 }
+				add_to_array = { judges_party_ruler_array = 8 }
+				add_to_array = { judges_party_ruler_array = 10 }
+				add_to_array = { judges_party_ruler_array = 11 }
+				add_to_array = { judges_party_ruler_array = 12 }
 			}
 		}
 	}

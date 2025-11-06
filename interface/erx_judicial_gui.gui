@@ -122,7 +122,6 @@ guiTypes = {
 			frame = 1
 		}
 
-
 		iconType = {
 			name = "judicial_gui_com_sierra_judge_portrait"
 			position = { x = 80 y = 270 }
@@ -253,7 +252,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "judge_current_name"
 				position = { x = 48 y = 43 }
-				text = "Name"
+				text = judge_current_short_name_scripted
 				font = "monofont_16"
 				format = center
 				maxWidth = 80
@@ -263,7 +262,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "judge_current_party_name"
 				position = { x = 48 y = 70 }
-				text = "Party"
+				text = judge_current_party_name_scripted
 				font = "monofont_16"
 				format = center
 				maxWidth = 80
@@ -334,21 +333,21 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "judges_list_name"
-			position = { x = 48 y = 16 }
-			text = "Name"
+			position = { x = 45 y = 16 }
+			text = judge_short_name_scripted
 			font = "monofont_16"
 			format = center
-			maxWidth = 70
+			maxWidth = 75
 			multiline = no
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "judges_list_party_name"
-			position = { x = 48 y = 43 }
-			text = "Party"
+			position = { x = 45 y = 43 }
+			text = judge_party_name_scripted
 			font = "monofont_16"
 			format = center
-			maxWidth = 70
+			maxWidth = 75
 			multiline = no
 			alwaystransparent = yes
 		}
