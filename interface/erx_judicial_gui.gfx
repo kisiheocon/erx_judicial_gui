@@ -3,13 +3,13 @@ spriteTypes = {
 	#Open Judicial Button
 	spriteType = {
 		name = "GFX_ERB_open_judicial_button"
-		texturefile = "gfx/interface/ERB_judicial_gui/usa_congress_logo.dds" #Placeholder
+		texturefile = "gfx/interface/ERB_judicial_gui/usa_congress_logo.dds"
 		transparencecheck = yes
 	}
 	#Judges Portraits
 	spriteType = {
 		name = "GFX_ERB_judges_frame"
-		texturefile = "gfx/interface/ERB_judicial_gui/erb_judges_frame.dds" #Placeholder
+		texturefile = "gfx/interface/ERB_judicial_gui/erb_judges_frame.dds"
 		noOfFrames = 12
 	}
 	#Judge tab

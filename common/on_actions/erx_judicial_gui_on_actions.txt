@@ -2,7 +2,6 @@ on_actions = {
 	on_startup = {
 		effect = {
 			NCR = {
-				#add_to_array = { judges_list_array = 1 }
 				add_to_array = { judges_list_array = 2 }
 				add_to_array = { judges_list_array = 3 }
 				add_to_array = { judges_list_array = 4 }
