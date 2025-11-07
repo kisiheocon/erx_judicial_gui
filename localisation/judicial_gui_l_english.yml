@@ -2,7 +2,7 @@
 judicial_gui_name_loc: "§MFederal Judiciary Of The United States§!"
 judicial_recently_appointed_trigger_tt: "Recently appointed a Judge, days left: §Y[?judicial_recently_appointed_flag:days_left|Y0]§!"
 judicial_recently_fired_trigger_tt: "Recently fired a Judge, days left: §Y[?judicial_recently_fired_flag:days_left|Y0]§!"
-
+##Commonwealths##
 judicial_current_com_name_scripted: "[GetComName]"
 com_0_name: "Sierra Commonwealth"
 com_1_name: "Cascadian Commonwealth"
@@ -17,7 +17,7 @@ com_9_name: "New England Commonwealth"
 com_10_name: "Gulf  Commonwealth"
 com_11_name: "Dixie Commonwealth"
 com_12_name: "Columbia Commonwealth"
-
+##Parties##
 judge_party_name_scripted: "[GetJudgePartyName]"
 judge_current_party_name_scripted: "[GetCurrentJudgePartyName]"
 party_name_people: "§MNWP§!"
@@ -33,6 +33,7 @@ judge_current_short_name_scripted: "[GetCurrentJudgeShortName]"
 judge_current_portrait_tt: "[GetCurrentJudgeLongName]"
 judge_current_portrait_delay_tt: "[GetCurrentJudgeDesc]"
 
+##Judges##
 judge_2_short_name: "Cranium"
 judge_2_long_name: "§WRoadmaster§! Cranium"
 judge_2_desc: "§LCranium was brought into the Bone Dancers at a young age, a child taken from a raided Heaven's Gate caravan and raised as their own. This boy ended up growing into a warrior, participating in the Bone Dances of the Odious King and fighting off bands of raiders trying to take from the Bone Dancers rich lands. In recent years Cranium has began to be known as the leader of the Bone Dancers - taking a position of leadership as his might became known to all.§!"
@@ -50,7 +51,6 @@ judge_5_short_name: "Boringalis"
 judge_6_short_name: "Zorealis"
 
 judge_7_short_name: "Saltus"
-judge_7_long_name: "Saltus of Redsun"
 
 judge_8_short_name: "Corby"
 

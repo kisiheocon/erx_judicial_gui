@@ -4,7 +4,6 @@ guiTypes = {
 		name = "judicial_open_window"
 		position = { x=0 y=0 }
 		size = { width = 220 height = 128 }
-		#clipping = no
 
 		buttonType = {
 			name = "judicial_open_button"
