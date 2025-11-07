@@ -18,6 +18,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ERB_judicial_gui/judges_tab.dds"
 		transparencecheck = yes
 	}
+	#Judge buttons
+	spriteType = {
+		name = "GFX_ERB_judges_button_background"
+		texturefile = "gfx/interface/ERB_judicial_gui/erb_judicial_judges_button_background.dds"
+		transparencecheck = yes
+	}
 	#Fire Button
 	spriteType = {
 		name = "GFX_ERB_judge_fire_button"

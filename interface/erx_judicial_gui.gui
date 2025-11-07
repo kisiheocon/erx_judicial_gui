@@ -247,7 +247,7 @@ guiTypes = {
 			size = { width = 150 height = 70 }
 			instantTextboxType = {
 				name = "judge_current_com_name"
-				position = { x = 4 y = 0 }
+				position = { x = 4 y = -1 }
 				text = judicial_current_com_name_scripted
 				font = "monofont_16"
 				format = center
@@ -257,15 +257,23 @@ guiTypes = {
 			}
 			iconType = {
 				name = "judge_current_portrait"
-				position = { x = 5 y = 40 }
+				position = { x = 5 y = 42 }
 				spriteType = "GFX_ERB_judges_frame"
 				frame = 1
+			}
+			instantTextBoxType = {
+				name = "judge_current_info_box"
+				position = { x = 3 y = 36 }
+				maxwidth = 124
+				maxHeight = 63
+				text = ""
+				font = "monofont_16"
 				pdx_tooltip = judge_current_portrait_tt
 				pdx_tooltip_delayed = judge_current_portrait_delay_tt
 			}
 			instantTextboxType = {
 				name = "judge_current_name"
-				position = { x = 48 y = 43 }
+				position = { x = 45 y = 45 }
 				text = judge_current_short_name_scripted
 				font = "monofont_16"
 				format = center
@@ -275,7 +283,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "judge_current_party_name"
-				position = { x = 48 y = 70 }
+				position = { x = 45 y = 70 }
 				text = judge_current_party_name_scripted
 				font = "monofont_16"
 				format = center
@@ -307,7 +315,7 @@ guiTypes = {
 			position = { x = 95 y = 224 }
 			clipping = yes
 			size = { width = 295 height = 400 }
-			margin = { left = 0 right = 23 top = 13 bottom = 15 }
+			margin = { left = 2 right = 23 top = 15 bottom = 15 }
 			verticalScrollbar = "right_vertical_slider"
 			smooth_scrolling = yes
 
@@ -333,9 +341,8 @@ guiTypes = {
 		size = { width = 120 height = 80 }
 		buttonType = {
 			name = "judges_list_button"
-			spriteType = "GFX_tiled_header_1"
-			position = { x = 0 y = 0}
-			size = { width = 125 height = 80 }
+			spriteType = "GFX_ERB_judges_button_background"
+			position = { x = 0 y = 0 }
 			pdx_tooltip = judges_list_button_tt
 			pdx_tooltip_delayed = judges_list_button_delay_tt
 		}
