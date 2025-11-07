@@ -4,11 +4,9 @@ scripted_gui = {
 		context_type = player_context
 		parent_window_token = politics_tab
 		window_name = "judicial_open_window"
-
 		visible = {
 			original_tag = NCR
 		}
-
 		effects = {
 			judicial_open_button_click = {
 				if = {
@@ -23,7 +21,6 @@ scripted_gui = {
 	judicial_gui_judges_tab = {
 		context_type = player_context
 		window_name = "judicial_gui_judges_container"
-
 		visible = { 
 			has_country_flag = show_judicial_gui_flag
 			NOT = { check_variable = { judicial_gui_selected_com_var = 13 } }
@@ -32,14 +29,12 @@ scripted_gui = {
 			judges_list_button_click = { judges_list_button_click_scripted_effect = yes }
 			judge_current_fire_button_click = { judge_current_fire_button_click_scripted_effect = yes }
 		}
-
 		triggers = {
 			judges_list_portrait_visible = { set_temp_variable = { judges_list_portrait_frame = judges_list_array^judges_idx } }
 			judge_current_portrait_visible = { set_temp_variable = { judge_current_portrait_frame = judicial_gui_com_judge_array^judicial_gui_selected_com_var } }
 			judges_list_button_click_enabled = { judges_list_button_click_enabled_scripted_trigger = yes }
 			judge_current_fire_button_click_enabled = { judge_current_fire_button_click_enabled_scripted_trigger = yes }
 		}
-
 		dynamic_lists = {
 			judges_list_gridbox = {
 				array = judges_list_array
@@ -47,7 +42,6 @@ scripted_gui = {
 				index = judges_idx
 			}
 		}
-
 		properties = {
 			judge_current_portrait = { frame = judge_current_portrait_frame }
 			judges_list_portrait = { frame = judges_list_portrait_frame }
@@ -57,11 +51,7 @@ scripted_gui = {
 	judicial_gui_commonwealth_tab = {
 		context_type = player_context
 		window_name = "judicial_gui_commonwealth_container"
-
-		visible = { 
-			has_country_flag = show_judicial_gui_flag
-		}
-
+		visible = { has_country_flag = show_judicial_gui_flag }
 		effects = {
 			judicial_close_button_click = { clr_country_flag = show_judicial_gui_flag }
 			judicial_gui_com_sierra_click = {
@@ -156,7 +146,6 @@ scripted_gui = {
 				else = { set_variable = { judicial_gui_selected_com_var = 12 } }
 			}
 		}
-		
 		triggers = {
 			judicial_gui_com_sierra_visible = {
 				if = {
@@ -262,7 +251,6 @@ scripted_gui = {
 				else = { set_temp_variable = {  judicial_gui_com_columbia_frame = 1 } }
 			}
 			judicial_gui_com_columbia_click_enabled = { NOT = { check_variable = { erx_common_seat_random^12 = 0 } } }
-
 			judicial_gui_com_sierra_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_sierra_judge_portrait_frame = judicial_gui_com_judge_array^0 } }
 			judicial_gui_com_cascadia_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_cascadia_judge_portrait_frame = judicial_gui_com_judge_array^1 } }
 			judicial_gui_com_fourstate_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_fourstate_judge_portrait_frame = judicial_gui_com_judge_array^2 } }
@@ -277,7 +265,6 @@ scripted_gui = {
 			judicial_gui_com_dixie_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_dixie_judge_portrait_frame = judicial_gui_com_judge_array^11 } }
 			judicial_gui_com_columbia_judge_portrait_visible = { set_temp_variable = { judicial_gui_com_columbia_judge_portrait_frame = judicial_gui_com_judge_array^12 } }
 		}
-
 		properties = {
 			judicial_gui_com_sierra = { frame = judicial_gui_com_sierra_frame }
 			judicial_gui_com_cascadia = { frame = judicial_gui_com_cascadia_frame }
@@ -292,7 +279,6 @@ scripted_gui = {
 			judicial_gui_com_gulf = { frame = judicial_gui_com_gulf_frame }
 			judicial_gui_com_dixie = { frame = judicial_gui_com_dixie_frame }
 			judicial_gui_com_columbia = { frame = judicial_gui_com_columbia_frame }
-
 			judicial_gui_com_sierra_judge_portrait = { frame = judicial_gui_com_sierra_judge_portrait_frame }
 			judicial_gui_com_cascadia_judge_portrait = { frame = judicial_gui_com_cascadia_judge_portrait_frame }
 			judicial_gui_com_fourstate_judge_portrait = { frame = judicial_gui_com_fourstate_judge_portrait_frame }

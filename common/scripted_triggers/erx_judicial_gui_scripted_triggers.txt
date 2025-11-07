@@ -22,6 +22,15 @@ judges_list_button_click_enabled_scripted_trigger = {
 				always = no
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+					judges_list_array^judges_idx = 3
+				}
+				
+			}
+			has_stability > 0.49
+		}
 	}
 }
 

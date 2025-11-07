@@ -52,10 +52,18 @@ clear_com_judges = {
 #Effect - Hiring a judge from list
 judges_list_button_click_scripted_effect = {
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
+	if = {
+		limit = {
+			check_variable = {
+				judges_list_array^judges_idx = 2
+			}
+		}
+		add_political_power = 2000
+	}
 	remove_from_array = { judges_list_array = judges_list_array^judges_idx }
 	set_country_flag = { #Flag for cooldown
 		flag = judicial_recently_appointed_flag
-		days = 30
+		days = 5
 		value = 1
 	}
 }
@@ -63,10 +71,18 @@ judges_list_button_click_scripted_effect = {
 #Effect - Firing a judge from list
 judge_current_fire_button_click_scripted_effect = {
 	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
+	if = {
+		limit = { 
+			check_variable = {
+				judicial_gui_com_judge_array^judicial_gui_selected_com_var = 2
+			}
+		}
+		add_political_power = -2000
+	}
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
 	set_country_flag = { #Flag for cooldown
 		flag = judicial_recently_fired_flag
-		days = 30
+		days = 5
 		value = 1
 	}
 }
