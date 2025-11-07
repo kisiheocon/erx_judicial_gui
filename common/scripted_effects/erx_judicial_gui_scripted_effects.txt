@@ -1,19 +1,5 @@
-clear_judges_array_scripted_effect = {
-	clear_array = judges_list_array
-}
-
-add_judge_12 = {
-	add_to_array = { judges_list_array = 12 }
-}
-
-set_up_com_1 = {
-	set_variable = { erx_common_seat_random^1 = 1 }
-}
-
-close_com_1 = {
-	set_variable = { erx_common_seat_random^1 = 0 }
-}
-
+##Debugs - Only used when modding, it will break mechanics with parliament
+#Debug - Unlock all commonwealth in judicial GUI
 set_up_com_all = {
 	set_variable = { erx_common_seat_random^0 = 1 }
 	set_variable = { erx_common_seat_random^1 = 1 }
@@ -29,6 +15,7 @@ set_up_com_all = {
 	set_variable = { erx_common_seat_random^11 = 1 }
 	set_variable = { erx_common_seat_random^12 = 1 }
 }
+#Debug - Close all commonwealth in judicial GUI
 close_com_all = {
 	set_variable = { erx_common_seat_random^0 = 0 }
 	set_variable = { erx_common_seat_random^1 = 0 }
@@ -44,7 +31,7 @@ close_com_all = {
 	set_variable = { erx_common_seat_random^11 = 0 }
 	set_variable = { erx_common_seat_random^12 = 0 }
 }
-
+#Debug - Clear all appointed judges in the commonwealths
 clear_com_judges = {
 	set_variable = { judicial_gui_com_judge_array^0 = 1 }
 	set_variable = { judicial_gui_com_judge_array^1 = 1 }
@@ -61,20 +48,23 @@ clear_com_judges = {
 	set_variable = { judicial_gui_com_judge_array^12 = 1 }
 }
 
+##Scripted Effects for the GUI
+#Effect - Hiring a judge from list
 judges_list_button_click_scripted_effect = {
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
 	remove_from_array = { judges_list_array = judges_list_array^judges_idx }
-	set_country_flag = {
+	set_country_flag = { #Flag for cooldown
 		flag = judicial_recently_appointed_flag
 		days = 30
 		value = 1
 	}
 }
 
+#Effect - Firing a judge from list
 judge_current_fire_button_click_scripted_effect = {
 	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
-	set_country_flag = {
+	set_country_flag = { #Flag for cooldown
 		flag = judicial_recently_fired_flag
 		days = 30
 		value = 1

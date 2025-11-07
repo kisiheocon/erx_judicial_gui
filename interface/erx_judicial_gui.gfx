@@ -10,7 +10,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ERB_judges_frame"
 		texturefile = "gfx/interface/ERB_judicial_gui/erb_judges_frame.dds"
-		noOfFrames = 12
+		noOfFrames = 12 #Increase this when adding more judges
 	}
 	#Judge tab
 	spriteType = {
@@ -24,7 +24,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ERB_judicial_gui/judge_fire_button.dds"
 		transparencecheck = yes
 	}
-	
 	#Background
 	spriteType = {
 		name = "GFX_ERB_erb_judicial_com_background"

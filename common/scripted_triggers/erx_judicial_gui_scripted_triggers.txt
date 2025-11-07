@@ -1,5 +1,6 @@
+#Trigger - Hiring a judge from list
 judges_list_button_click_enabled_scripted_trigger = {
-	if = {
+	if = { #Special for Sierra Commonwealth
 		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
 			tooltip = "This Judge position can only be appointed through special occasions!"
@@ -7,14 +8,14 @@ judges_list_button_click_enabled_scripted_trigger = {
 		}
 	}
 	else = {
-		if = {
+		if = { #Already have a judge in selected Commonwealth
 			limit = { NOT = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } } }
 			custom_trigger_tooltip = {
 				tooltip = "This Judge position is filled!"
 				always = no
 			}
 		}
-		if = {
+		if = { #Recently appointed a judge in 30 days
 			limit = { has_country_flag = judicial_recently_appointed_flag }
 			custom_trigger_tooltip = {
 				tooltip = judicial_recently_appointed_trigger_tt
@@ -24,8 +25,9 @@ judges_list_button_click_enabled_scripted_trigger = {
 	}
 }
 
+#Trigger - Firing a judge from selected commonwealth
 judge_current_fire_button_click_enabled_scripted_trigger = {
-	if = {
+	if = { #Special for Sierra Commonwealth
 		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
 			tooltip = "This Judge position is non-negotable!"
@@ -33,14 +35,14 @@ judge_current_fire_button_click_enabled_scripted_trigger = {
 		}
 	}
 	else = {
-		if = {
+		if = { #Don't have a judge in selected Commonwealth
 			limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } }
 			custom_trigger_tooltip = {
 				tooltip = "This Judge position is vacant!"
 				always = no
 			}
 		}
-		if = {
+		if = { #Recently fired a judge in 30 days
 			limit = { has_country_flag = judicial_recently_fired_flag }
 			custom_trigger_tooltip = {
 				tooltip = judicial_recently_fired_trigger_tt
