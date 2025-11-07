@@ -35,91 +35,104 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "judicial_gui_name"
-			position = { x = 120 y = 35 }
-			text = "Federal Judiciary Of The United States"
-			font = "monofont_24"
+			position = { x = 120 y = 38 }
+			text = judicial_gui_name_loc
+			font = "pipboy_32"
 			format = center
 			maxWidth = 600
 			multiline = no
-			#alwaystransparent = yes
+			alwaystransparent = yes
 		}
 		buttonType = {
 			name = "judicial_gui_com_sierra"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_sierra"
 			frame = 1
+			pdx_tooltip = com_0_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_cascadia"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_cascadia"
 			frame = 1
+			pdx_tooltip = com_1_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_fourstate"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_fourstate"
 			frame = 1
+			pdx_tooltip = com_2_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_northern"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_northern"
 			frame = 1
+			pdx_tooltip = com_3_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_lonestar"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_lonestar"
 			frame = 1
+			pdx_tooltip = com_4_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_greatlakes"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_greatlakes"
 			frame = 1
+			pdx_tooltip = com_5_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_midwest"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_midwest"
 			frame = 1
+			pdx_tooltip = com_6_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_appalachian"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_appalachian"
 			frame = 1
+			pdx_tooltip = com_7_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_empire"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_empire"
 			frame = 1
+			pdx_tooltip = com_8_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_england"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_england"
 			frame = 1
+			pdx_tooltip = com_9_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_gulf"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_gulf"
 			frame = 1
+			pdx_tooltip = com_10_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_dixie"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_dixie"
 			frame = 1
+			pdx_tooltip = com_11_name
 		}
 		buttonType = {
 			name = "judicial_gui_com_columbia"
 			position = { x = 10 y = 80 }
 			spriteType = "GFX_ERB_erb_com_columbia"
 			frame = 1
+			pdx_tooltip = com_12_name
 		}
 
 		iconType = {
@@ -248,6 +261,8 @@ guiTypes = {
 				position = { x = 5 y = 40 }
 				spriteType = "GFX_ERB_judges_frame"
 				frame = 1
+				pdx_tooltip = judge_current_portrait_tt
+				pdx_tooltip_delayed = judge_current_portrait_delay_tt
 			}
 			instantTextboxType = {
 				name = "judge_current_name"
@@ -274,6 +289,7 @@ guiTypes = {
 				name = "judge_current_fire_button"
 				position = { x = 8 y = 100 }
 				spriteType = "GFX_ERB_judge_fire_button"
+				pdx_tooltip = judge_current_fire_button_tt
 			}
 			instantTextboxType = {
 				name = "judge_current_fire_text"
@@ -321,8 +337,8 @@ guiTypes = {
 			spriteType = "GFX_tiled_header_1"
 			position = { x = 0 y = 0}
 			size = { width = 125 height = 80 }
-			#pdx_tooltip = law_name_scripted # The name of the Entry/Law
-			#pdx_tooltip_delayed = act_list_button_tt # The name of the Description / Show of the Idea.
+			pdx_tooltip = judges_list_button_tt
+			pdx_tooltip_delayed = judges_list_button_delay_tt
 		}
 		iconType = {
 			name = "judges_list_portrait"
