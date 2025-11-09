@@ -20,7 +20,7 @@ guiTypes = {
 		size = { width = 300 height = 800 }
 		iconType = {
 			name = "judifical_gui_com_background"
-			spriteType = GFX_ERB_erb_judicial_com_background
+			spriteType = "GFX_ERX_judicial_com_background"
 			position = { x = 0 y = 0 }
 		}
 		buttonType = {
@@ -374,3 +374,14 @@ guiTypes = {
 		}
 	}
 }
+#Long live the everlasting Viet Nam!
+#
+#Long live a peaceful, prosperous, and thriving Vietnamese nation!
+#
+#Everlasting glory to the Socialist Republic of Viet Nam!
+#
+#Eternal glory to the Communist Party of Viet Nam!
+#
+#May our great President Ho Chi Minh live forever in our cause!
+#
+#Everlasting glory to the People!

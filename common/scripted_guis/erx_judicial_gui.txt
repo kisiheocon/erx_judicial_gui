@@ -295,3 +295,14 @@ scripted_gui = {
 		}
 	}
 }
+#Long live the everlasting Viet Nam!
+#
+#Long live a peaceful, prosperous, and thriving Vietnamese nation!
+#
+#Everlasting glory to the Socialist Republic of Viet Nam!
+#
+#Eternal glory to the Communist Party of Viet Nam!
+#
+#May our great President Ho Chi Minh live forever in our cause!
+#
+#Everlasting glory to the People!

@@ -53,7 +53,10 @@ clear_com_judges = {
 judges_list_button_click_scripted_effect = {
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
 
-
+	if = {
+		limit = { check_variable = { judges_list_array^judges_idx = 13 } }
+		judge_hire_13_scripted_effect = yes
+	}
 
 	remove_from_array = { judges_list_array = judges_list_array^judges_idx }
 	set_country_flag = {  flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
@@ -64,15 +67,40 @@ judges_list_button_click_scripted_effect = {
 judge_current_fire_button_click_scripted_effect = {
 	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
 
-	
+	if = {
+		limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } }
+		judge_fire_13_scripted_effect = yes
+	}
 
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
 	set_country_flag = { flag = judicial_recently_fired_flag days = 5 value = 1 } #Flag for cooldown
 }
 
-##Unique effect to hire Talbot, since she's the the chief for Sierra Commonwealth
+##Unique effect to hire Talbot, since she's the chief for Sierra Commonwealth
 judge_hire_2_scripted_effect = {
 	set_variable = { judicial_gui_com_judge_array^0 = 2 }
 	add_ideas = judge_2_hidden_idea
 	remove_from_array = { judges_list_array = 2 }
+}
+
+##DeVito - 13
+judge_hire_13_scripted_effect = {
+	add_political_power = -50
+	add_ideas = judge_13_hidden_idea
+}
+
+judge_fire_13_scripted_effect = {
+	remove_ideas = judge_13_hidden_idea
+}
+
+remove_devito = {
+	remove_from_array = { judges_list_array = 13 }
+}
+
+add_devito = {
+	add_to_array = { judges_list_array = 13 }
+}
+
+add_devito_nwp = {
+	add_to_array = { judges_party_people_array = 13 }	
 }

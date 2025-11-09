@@ -6,5 +6,12 @@ ideas = {
 				stability_factor = 0.03
 			}
 		}
+		judge_13_hidden_idea = {
+			modifier = {
+				resistance_activity = 0.08
+				opinion_gain_monthly_same_ideology_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
 	}
 }

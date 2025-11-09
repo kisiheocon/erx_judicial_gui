@@ -1,22 +1,3 @@
-##Commonwealth Names - These shouldn't be touch ever so it's not written to be modifiable-friendly
-defined_text = {
-	name = GetComName
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 0 } } localization_key = com_0_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 1 } } localization_key = com_1_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 2 } } localization_key = com_2_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 3 } } localization_key = com_3_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 4 } } localization_key = com_4_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 5 } } localization_key = com_5_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 6 } } localization_key = com_6_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 7 } } localization_key = com_7_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 8 } } localization_key = com_8_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 9 } } localization_key = com_9_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 10 } } localization_key = com_10_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 11 } } localization_key = com_11_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 12 } } localization_key = com_12_name }
-	text = { localization_key = judge_missing_loc }
-}
-
 ##Current Appointed Judge in selected Commonwealth
 #Current - Short Name
 defined_text = {
@@ -32,6 +13,7 @@ defined_text = {
 	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 10 } } localization_key = judge_10_short_name }
 	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 11 } } localization_key = judge_11_short_name }
 	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 12 } } localization_key = judge_12_short_name }
+	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } } localization_key = judge_13_short_name }
 
 	text = { localization_key = judge_missing_loc }
 }
@@ -49,6 +31,7 @@ defined_text = {
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 10 } } localization_key = judge_10_long_name }
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 11 } } localization_key = judge_11_long_name }
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 12 } } localization_key = judge_12_long_name }
+	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } } localization_key = judge_13_long_name }
 	
 	text = { localization_key = judge_missing_loc }
 }
@@ -66,6 +49,7 @@ defined_text = {
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 10 } } localization_key = judge_10_desc }
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 11 } } localization_key = judge_11_desc }
 	#text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 12 } } localization_key = judge_12_desc }
+	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } } localization_key = judge_13_desc }
 
 	text = { localization_key = judge_missing_loc }
 }
@@ -73,16 +57,8 @@ defined_text = {
 defined_text = {
 	name = GetCurrentJudgeModifier
 	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 2 } } localization_key = idea_desc|judge_2_hidden_idea }
+	text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } } localization_key = idea_desc|judge_13_hidden_idea }
 
-}
-#Current - Party - These shouldn't be touch directly in here
-defined_text = {
-	name = GetCurrentJudgePartyName
-	text = { trigger = { is_in_array = { judges_party_people_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_people }
-	text = { trigger = { is_in_array = { judges_party_intellectuals_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_intellectuals }
-	text = { trigger = { is_in_array = { judges_party_elites_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_elites }
-	text = { trigger = { is_in_array = { judges_party_ruler_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_ruler }
-	text = { localization_key = party_name_neutral }
 }
 
 ##Judges in list that hasn't been appointed
@@ -100,6 +76,7 @@ defined_text = {
 	text = { trigger = { check_variable = { judges_list_array^judges_idx = 10 } } localization_key = judge_10_short_name }
 	text = { trigger = { check_variable = { judges_list_array^judges_idx = 11 } } localization_key = judge_11_short_name }
 	text = { trigger = { check_variable = { judges_list_array^judges_idx = 12 } } localization_key = judge_12_short_name }
+	text = { trigger = { check_variable = { judges_list_array^judges_idx = 13 } } localization_key = judge_13_short_name }
 
 	text = { localization_key = judge_missing_loc }
 }
@@ -117,6 +94,7 @@ defined_text = {
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 10 } } localization_key = judge_10_long_name }
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 11 } } localization_key = judge_11_long_name }
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 12 } } localization_key = judge_12_long_name }
+	text = { trigger = { check_variable = { judges_list_array^judges_idx = 13 } } localization_key = judge_13_long_name }
 
 	text = { localization_key = judge_missing_loc }
 }
@@ -134,6 +112,7 @@ defined_text = {
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 10 } } localization_key = judge_10_desc }
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 11 } } localization_key = judge_11_desc }
 	#text = { trigger = { check_variable = { judges_list_array^judges_idx = 12 } } localization_key = judge_12_desc }
+	text = { trigger = { check_variable = { judges_list_array^judges_idx = 13 } } localization_key = judge_13_desc }
 
 	text = { localization_key = judge_missing_loc }
 }
@@ -141,14 +120,6 @@ defined_text = {
 defined_text = {
 	name = GetJudgeModifier
 	text = { trigger = { check_variable = { judges_list_array^judges_idx = 2 } } localization_key = idea_desc|judge_2_hidden_idea }
+	text = { trigger = { check_variable = { judges_list_array^judges_idx = 13 } } localization_key = idea_desc|judge_2_hidden_idea }
 
-}
-#List - Party - These shouldn't be touch directly in here
-defined_text = {
-	name = GetJudgePartyName
-	text = { trigger = { is_in_array = { judges_party_people_array = judges_list_array^judges_idx } } localization_key = party_name_people }
-	text = { trigger = { is_in_array = { judges_party_intellectuals_array = judges_list_array^judges_idx } } localization_key = party_name_intellectuals }
-	text = { trigger = { is_in_array = { judges_party_elites_array = judges_list_array^judges_idx } } localization_key = party_name_elites }
-	text = { trigger = { is_in_array = { judges_party_ruler_array = judges_list_array^judges_idx } } localization_key = party_name_ruler }
-	text = { localization_key = party_name_neutral }
 }

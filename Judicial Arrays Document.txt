@@ -1,0 +1,128 @@
+##########################
+###  ERX Judicial GUI  ###
+###  Scripted by Deez  ###
+###GFXs by SouthernHero###
+##########################
+
+NOTE: Below are arrays and informations that are useful and important to keep track of the amount of judges
+
+1. Judge's IDs: Each character will be assigned with an ID for the game to keep track
+
+1	Empty - Do not create a character with this ID, it's used for the game to know it's empty
+2	Elizabeth Talbot
+3	Joseph "Joey" DeVito
+4	ADD MORE HERE
+
+2. Used to keep track of the judges on the available-for-hire list:
+
+judges_list_array ^ judges_idx = Judge IDs
+
+judges_idx = index used for the list to format
+Judge IDs = the Judges IDs
+
+Example: This array should only be fiddle with through scripted effect/trigger, directly messing with it in the gui can cause issues
+judges_list_array^judges_idx = 2 #The judge on the list is Talbot/2 is Talbot's ID
+judges_list_array^judges_idx = 3 #The judge on the list is Devito/3 is Devito's ID
+
+Example in-game:
+-Adding a new Judge into the list:
+add_to_arary = { judges_list_array = 3 } #Add DeVito into the available-for-hire list/3 is DeVito's ID
+
+-Removing a Judge from the list:
+remove_from_array = { judges_list_array = 3 } #Remove DeVito from the available-for-hire list/3 is DeVito's ID
+
+-When hire DeVito, give 30 pp. This should only be used in judges_list_button_click_scripted_effect
+if = {
+	limit = { judges_list_array^judges_idx = 3 } #3 is DeVito's ID
+	add_political_power = 30
+}
+
+3. Used to keep track of which judge each commonwealth currently employed:
+NOTE: The system isn't designed to have more than 13 commonwealths, if you want to add more, contact @Deez
+for more information
+
+judicial_gui_com_judge_array ^ index = value
+
+index = which commonwealth
+value = which judge / judge's ID
+
+0	Sierra Commonwealth
+1	Cascadian Commonwealth
+2	Four States Commonwealth
+3	Great Northern Commonwealth
+4	Lone Star Commonwealth
+5	Great Lakes Commonwealth
+6	Great Midwest Commonwealth
+7	Appalachian Commonwealth
+8	Empire Commonwealth
+9	New England Commonwealth
+10	Gulf Commonwealth
+11	Dixie Commonwealth
+12	Columbia Commonwealth
+
+Example:
+judicial_gui_com_judge_array^0 = Elizabeth Talbot (Cause she will be the only judge in Sierra)
+judicial_gui_com_judge_array^1 = Whatever the ID of the judge employed in Cascadian Commonwealth
+
+Example when used in-game:
+-If Cascadian Commonwealth have DeVito, give 30 political power
+if = {
+	limit = { judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
+	add_political_power = 30
+}
+
+-Assign DeVito as a judge for Cascadian Commonwealth
+#remove_from_array = { judicial_gui_com_judge_array = 3 } #Remove Devito from judge position if he already in a position somewhere (OPTIONAL)
+#remove_from_array = { judges_list_array = 3 } #Remove Devito from the Available-for-hire judge list if he's on the list (OPTIONAL)
+set_variable = { judicial_gui_com_judge_array^1 = 3 } #1 is the ID of Cascadian Commonwealth/3 is the ID of DeVito
+
+-Remove Devito if he's a judge for Cascadian Commonwealth
+if = {
+	limit = { judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
+	set_variable = { judicial_gui_com_judge_array^1 = 1 } #1 is the ID of Cascadian Commonwealth/1 is the ID of Empty
+	#add_to_arary = { judges_list_array = 3 } #3 is the ID of Devito, add him back to the available-for-hire list (OPTIONAL)
+}
+
+4. Used to keep track of judges's party affiliation
+
+judges_party_people_array			#People
+judges_party_intellectuals_array	#Intellectuals
+judges_party_elites_array			#Elites
+judges_party_ruler_array			#Ruler
+
+Loc Keys:
+party_name_people					#NWP	New World Party
+party_name_intellectuals			#TP		Torch Party
+party_name_elites					#CL		Citizen's League
+party_name_ruler					#GL		Granite Loyalist
+party_name_neutral	#When a character isn't assigned to a party it will default to this
+
+Example:
+-Add DeVito to ruler party affiliation:
+##Remove DeVito from other party first, this might not needed if the character won't ever switch party
+#remove_from_array = { judges_party_people_array = 3 } #3 is the ID of DeVito
+#remove_from_array = { judges_party_intellectuals_array = 3 } #3 is the ID of DeVito
+#remove_from_array = { judges_party_elites_array = 3 } #3 is the ID of DeVito
+add_to_array = { judges_party_ruler_array = 3 } #3 is the ID of DeVito
+
+-If DeVito is in New World Party/People, give 30 political power:
+if = {
+	limit = { is_in_array = { party_name_people = 3 } } #3 is the ID of DeVito
+	add_political_power = 30
+}
+
+-Trigger require DeVito to be in Torch Party/Intellectuals:
+is_in_array = { party_name_intellectuals = 3 } #3 is the ID of DeVito
+
+
+Long live the everlasting Viet Nam!
+
+Long live a peaceful, prosperous, and thriving Vietnamese nation!
+
+Everlasting glory to the Socialist Republic of Viet Nam!
+
+Eternal glory to the Communist Party of Viet Nam!
+
+May our great President Ho Chi Minh live forever in our cause!
+
+Everlasting glory to the People!

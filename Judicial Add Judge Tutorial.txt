@@ -1,0 +1,103 @@
+##########################
+###  ERX Judicial GUI  ###
+###  Scripted by Deez  ###
+###GFXs by SouthernHero###
+##########################
+
+###Step 0: To open the Judicial GUI
+add this country flag into the tag: show_judicial_gui_flag
+
+###Step 1: Add the Portrait GFXs
+Portrait location: gfx/interface/ERX_judicial_gui/erb_judges_frame.dds
+There are two way to do this
+Either:
+
+Replace one of the previous used portraits slot
+
+OR
+
+Add the new portrait at the end of the image file
+
+NOTE:If Adding a new portrait at the end, you will need to go to interface/erx_judicial_gui.gfx
+and change the spriteType GFX_ERB_judges_frame noOfFrames attribute by + 1
+
+-The Placement of the Portrait GFXs will be used to display for the judges in-game.
+Check gfx/interface/ERX_judicial_gui/erb_judges_frame_template to see the placement example with the character IDs written on each frame
+
+-The process of adding a new portrait is pretty self-explanatory, to whoever adding new judge reading this but can't
+do that part, it's really a skill issue. Please contact @Deez or @SouthernHero for more information
+
+###Step 2: Add the character in-game
+Let's pretend the new character have the ID of 7
+
+Run the effect to add the player to the list of available judge list (Optional)
+
+add_to_arary = { judges_list_array = 7 }
+
+Run the effect to assign the judge directly to a commonwealth (Optional)
+Lone Star Commonwealth's ID is 4
+
+set_variable = { judicial_gui_com_judge_array^4 = 7 }
+
+Check if the judge's portrait show up in either available-for-hire list or in any of the 's judge position to see if the character is added
+-If yes, continue. If not contact @Deez for more information
+
+###Step 3: Add the character's party affiliation
+Let's pretend the new character have the ID of 7
+The system use arrays to keep track of which party the characters support, pick 1 below:
+
+add_to_array = { judges_party_people_array = 7 }			#People - New World Party
+add_to_array = { judges_party_intellectuals_array = 7 }		#Intellectual - Torch Party - Socialism Superiority - The best party in the game - Sponsored by the Socialist Republic of Vietnam - @Deez
+add_to_array = { judges_party_elites_array = 7 }			#Elites - Citizen's League
+add_to_array = { judges_party_ruler_array = 7 }				#Ruler - Granite Loyalist
+
+The system will automatically display their party affiliation in-game, usually below their name in the GUI
+If not added to one of the above arrays, their party affiliation will default to Neutral
+
+###Step 4: Add the Character Short Name/Long Name/Description
+Let's pretend the new character have the ID of 7
+
+The current loc file for the Judicial gui is located in localisation/judicial_gui_l_english.yml
+There is a section for the judges and you can basically figure out how to ctrl + C and ctrl + V. The loc key we'll be using:
+
+judge_7_short_name: "Deez"						#Used to display on the GUI
+judge_7_long_name: "Deez Nuts"					#Used when hover over the judge for more information
+judge_7_desc: "§LDeez is a very cool person§!"	#Same with long_name but as a description style
+
+Go to common/scripted_localisation/judicial_characters_scripted_localisation to add the new character ID into the system
+There are 2 main version, the current and list
+Current: Used to display the character's information when the judge is appointed in a commonwealth
+List: Used to displayer the character's information when they are on the available-for-hire list
+
+For Current: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
+GetCurrentJudgeShortName:
+text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_short_name }
+
+GetCurrentJudgeLongName:
+text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_long_name }
+
+GetCurrentJudgeDesc
+text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_desc }
+
+For List: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
+GetJudgeShortName
+text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_short_name }
+
+GetJudgeLongName
+text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_long_name }
+
+GetJudgeDesc
+text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_desc }
+
+
+Long live the everlasting Viet Nam!
+
+Long live a peaceful, prosperous, and thriving Vietnamese nation!
+
+Everlasting glory to the Socialist Republic of Viet Nam!
+
+Eternal glory to the Communist Party of Viet Nam!
+
+May our great President Ho Chi Minh live forever in our cause!
+
+Everlasting glory to the People!
