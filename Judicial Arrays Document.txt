@@ -114,15 +114,3 @@ if = {
 -Trigger require DeVito to be in Torch Party/Intellectuals:
 is_in_array = { party_name_intellectuals = 3 } #3 is the ID of DeVito
 
-
-Long live the everlasting Viet Nam!
-
-Long live a peaceful, prosperous, and thriving Vietnamese nation!
-
-Everlasting glory to the Socialist Republic of Viet Nam!
-
-Eternal glory to the Communist Party of Viet Nam!
-
-May our great President Ho Chi Minh live forever in our cause!
-
-Everlasting glory to the People!

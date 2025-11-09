@@ -89,15 +89,45 @@ text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } loc
 GetJudgeDesc
 text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_desc }
 
+###Step 5: Add a modifier
+The Judge's modifiers are actually hidden ideas stored in common/ideas/erx_judicial_ideas.txt
 
-Long live the everlasting Viet Nam!
+You can follow the same format when addding new idea
 
-Long live a peaceful, prosperous, and thriving Vietnamese nation!
+judge_7_hidden_idea = {
+	modifier = {
+		resistance_activity = 0.05
+	}
+}
 
-Everlasting glory to the Socialist Republic of Viet Nam!
+Give the idea to the hire/fire scripted effects of the character
 
-Eternal glory to the Communist Party of Viet Nam!
+judge_hire_7_scripted_effect = {
+	add_ideas = judge_7_hidden_idea
+}
 
-May our great President Ho Chi Minh live forever in our cause!
+judge_fire_7_scripted_effect = {
+	remove_ideas = judge_7_hidden_idea
+}
 
-Everlasting glory to the People!
+For scripted loc check the two loc key and follow their format
+
+GetCurrentJudgeModifier
+text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
+
+GetJudgeModifier
+text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
+
+###Step 6: Adding special requirement to hire a judge
+Check the scripted trigger file common/scripted_triggers/erx_judicial_gui_scripted_triggers.txt for more information
+You can copy and paste many of the already set up checks and triggers
+Example:
+
+if = {
+	limit = { check_variable = { judges_list_array^judges_idx = 7 } }
+	has_political_power > 49
+	has_stability > 0.6
+}
+
+NOTE: When requiring stuff like a political power cost, you should do something like add_political_power = -50 into the scripted
+effect of hiring said character in Step 5
