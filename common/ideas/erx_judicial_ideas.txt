@@ -1,0 +1,10 @@
+ideas = {
+	hidden_ideas = {
+		judge_2_hidden_idea = {
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

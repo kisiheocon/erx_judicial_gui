@@ -3,7 +3,7 @@ judges_list_button_click_enabled_scripted_trigger = {
 	if = { #Special for Sierra Commonwealth
 		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
-			tooltip = "This Judge position can only be appointed through special occasions!"
+			tooltip = judge_sierra_blocked
 			always = no
 		}
 	}
@@ -11,7 +11,7 @@ judges_list_button_click_enabled_scripted_trigger = {
 		if = { #Already have a judge in selected Commonwealth
 			limit = { NOT = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } } }
 			custom_trigger_tooltip = {
-				tooltip = "This Judge position is filled!"
+				tooltip = judge_trigger_filled
 				always = no
 			}
 		}
@@ -22,15 +22,6 @@ judges_list_button_click_enabled_scripted_trigger = {
 				always = no
 			}
 		}
-		if = {
-			limit = {
-				check_variable = {
-					judges_list_array^judges_idx = 3
-				}
-				
-			}
-			has_stability > 0.49
-		}
 	}
 }
 
@@ -39,7 +30,7 @@ judge_current_fire_button_click_enabled_scripted_trigger = {
 	if = { #Special for Sierra Commonwealth
 		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
-			tooltip = "This Judge position is non-negotable!"
+			tooltip = judge_sierra_blocked
 			always = no
 		}
 	}
@@ -47,7 +38,7 @@ judge_current_fire_button_click_enabled_scripted_trigger = {
 		if = { #Don't have a judge in selected Commonwealth
 			limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } }
 			custom_trigger_tooltip = {
-				tooltip = "This Judge position is vacant!"
+				tooltip = judge_trigger_vacant
 				always = no
 			}
 		}

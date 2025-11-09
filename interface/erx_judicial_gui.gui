@@ -10,7 +10,6 @@ guiTypes = {
 			position = { x=470 y=235 }
 			spriteType = "GFX_ERB_open_judicial_button"
 			scale = 0.50
-			pdx_tooltip = "open"
 		}
 	}
 
@@ -268,8 +267,8 @@ guiTypes = {
 				maxHeight = 63
 				text = ""
 				font = "monofont_16"
-				pdx_tooltip = judge_current_portrait_tt
-				pdx_tooltip_delayed = judge_current_portrait_delay_tt
+				pdx_tooltip = jude_current_tt
+				pdx_tooltip_delayed = jude_current_delay_tt
 			}
 			instantTextboxType = {
 				name = "judge_current_name"
@@ -301,7 +300,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "judge_current_fire_text"
 				position = { x = 46 y = 107 }
-				text = "Fires Judge"
+				text = judge_fire_tt
 				font = "monofont_16"
 				format = left
 				maxWidth = 80
