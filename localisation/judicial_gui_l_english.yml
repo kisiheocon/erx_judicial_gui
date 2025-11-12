@@ -32,17 +32,17 @@ party_name_ruler: "§WGL§!"
 party_name_neutral: "§gNeutral§!"
 
 judges_list_button_tt: "[GetJudgeLongName]\n\n[GetJudgeModifier]\n[!judges_list_button_click_enabled]"
-judges_list_button_delay_tt: "[GetJudgeDesc]"
+judges_list_button_delay_tt: "§L[GetJudgeDesc]§!"
 judge_current_fire_button_tt: "[!judge_current_fire_button_click_enabled]"
 judge_short_name_scripted: "[GetJudgeShortName]"
 judge_current_short_name_scripted: "[GetCurrentJudgeShortName]"
 jude_current_tt: "[GetCurrentJudgeLongName]\n\n[GetCurrentJudgeModifier]"
-jude_current_delay_tt: "[GetCurrentJudgeDesc]"
+jude_current_delay_tt: "§L[GetCurrentJudgeDesc]§!"
 
 ##Judges##
 judge_2_short_name: "Talbot"
 judge_2_long_name: "Chief Justice Elizabeth Talbot\n§YApathetic Chief Justice of the Supreme Court§!"
-judge_2_desc: "§L\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78§!"
+judge_2_desc: "\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78"
 judge_2_hidden_idea: "Chief Justice: Elizabeth Talbot"
 
 judge_3_short_name: "3rd Name"
@@ -71,5 +71,5 @@ judge_12_short_name: "Defectum"
 
 judge_13_short_name: "DeVito"
 judge_13_long_name: "Justice Joseph \"Joey\" DeVito\n§YGhoul Supreme Court Justice.§!"
-judge_13_desc: "§L\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78§!"
+judge_13_desc: "\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78"
 judge_13_hidden_idea: "Judge: Justice Joseph \"Joey\" DeVito"
