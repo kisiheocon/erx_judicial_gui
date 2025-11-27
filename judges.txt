@@ -1,0 +1,214 @@
+1: No one, pretty obvious 
+
+2: Elizabth Talbot
+Independent (No party affiliation)
+
+political_power_factor = -0.03
+stability_factor = 0.03
+
+
+3: Adam Davis
+intellectuals_drift = 0.02
+political_power_factor = -0.1
+resistance_damage_to_garrison = -0.10
+
+
+4: Geraldine Yates
+elites_drift = 0.02
+caps_income_modifier = 0.15
+consumer_goods_expected_value = -0.03
+
+
+5: Chaya Buck
+people_drift = 0.04
+stability_factor = 0.05
+caps_income_modifier = -0.08
+
+
+6: Katherine Carbone
+people_drift = 0.02
+monthly_population = 0.02
+caps_income_modifier = -0.04
+
+
+7: James Liam
+intellectuals_drift = 0.02
+political_power_factor = 0.03
+stability_factor = -0.02
+
+
+8: Oliver Robertson
+elites_drift = 0.04
+stability_factor = 0.05
+resistance_damage_to_garrison = 0.03
+
+
+9: Killian Darkwater III 
+intellectuals_drift = 0.02
+resistance_target = 0.10
+caps_income_modifier = -0.10
+
+
+10: James Gizmo IV
+ruler_drift = 0.03
+political_power_factor = -0.03
+resistance_decay = 0.03
+
+
+11: Reuben Smith
+intellectuals_drift = 0.04
+political_power_factor = 0.06
+resistance_damage_to_garrison = -0.05
+
+
+12: Lucas Nash
+people_drift = 0.02
+resistance_decay = 0.04
+political_power_factor = -0.04
+
+
+13: Megan Gardner
+elites_drift = 0.03
+caps_income_modifier = 0.08
+resistance_damage_to_garrison = 0.05
+
+
+14: Kenneth Jacoren 
+ruler_drift = 0.02
+political_power_factor = 0.04
+compliance_gain = -0.04
+
+
+15: Junior Montoya
+intellectuals_drift = 0.02
+resistance_decay = -0.03
+resistance_damage_to_garrison = 0.04
+
+
+16: Cadence Knox
+intellectuals_drift = 0.03
+caps_income_modifier = -0.005
+compliance_gain = 0.04
+
+
+17: Bowen Jacobson
+people_drift = 0.04
+political_power_factor = 0.02
+stability_weekly  = -0.001
+
+
+18: Jace Daugherty
+ruler_drift = 0.03
+political_power_factor = 0.03
+stability_weekly  = -0.001
+
+
+19: Callum Lee
+elites_drift = 0.02
+caps_income_modifier = 0.05
+compliance_gain = -0.02
+
+
+20: Clem Hill
+people_drift = 0.03
+stability_weekly  = 0.002
+political_power_factor = -0.04
+
+
+21: Wendell Peterson
+intellectuals_drift = 0.03
+political_power_factor = 0.05
+recruitable_population_factor = -0.10
+
+
+22: Dennis Crocker
+ruler_drift = 0.04
+compliance_gain = 0.04
+political_power_factor = -0.03
+
+
+23: Kris Hanlon
+people_drift = 0.08
+political_power_factor = -0.15
+stability_weekly  = 0.04
+
+
+24: Anton Flynn
+elites_drift = 0.06
+caps_income_modifier = 0.15
+compliance_gain = -0.08
+
+
+25: Joseph "Joey" DeVito
+opinion_gain_monthly_same_ideology_factor = 0.03
+resistance_activity = -0.08
+political_power_factor = 0.15
+stability_factor = -0.02
+
+
+26: Jasmin Reed
+
+
+27: Jenny Santiago
+
+
+28: Chris Leblanc
+
+
+29: Frankie Cunningham
+
+
+30: Cassius Finch
+
+
+31: Garner McBaker
+
+
+32: Natasha Carter
+
+
+33: Daal'Va
+
+
+34: Al'a
+
+
+35: Mummanmunaugh
+elites_drift = 0.06
+caps_income_modifier = 0.12
+stability_factor = -0.08
+
+
+36: Marcus
+
+
+37: Geraldine
+
+
+38: Lewis
+
+
+39: Archibald
+
+
+40: Erickson
+
+
+41: Constance
+
+
+42: Tony Jay
+
+
+43: Zishah-2
+
+
+
+
+
+
+
+
+
+
+

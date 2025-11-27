@@ -45,31 +45,53 @@ judge_2_long_name: "Chief Justice Elizabeth Talbot\n§YApathetic Chief Justice o
 judge_2_desc: "\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78"
 judge_2_hidden_idea: "Chief Justice: Elizabeth Talbot"
 
-judge_3_short_name: "3rd Name"
-judge_3_long_name: "3rd Long Name"
+judge_3_short_name: "Davis"
+judge_3_long_name: "Adam Davis"
 judge_3_desc: "3rd Desc"
 
-judge_4_short_name: "4th Name"
-judge_4_long_name: "4th Long Name"
+judge_4_short_name: "Yates"
+judge_4_long_name: "Geraldine Yates"
 judge_4_desc: "4th Desc"
 
-judge_5_short_name: "5th Name"
+judge_5_short_name: "Buck"
 
-judge_6_short_name: "Zorealis"
+judge_6_short_name: "Carbone"
 
-judge_7_short_name: "Saltus"
+judge_7_short_name: "Liam"
 
-judge_8_short_name: "Corby"
+judge_8_short_name: "Robertson"
 
-judge_9_short_name: "Isaias"
+judge_9_short_name: "Darkwater"
 
-judge_10_short_name: "Australia"
+judge_10_short_name: "Gizmo"
 
-judge_11_short_name: "Eridanus"
+judge_11_short_name: "Smith"
 
-judge_12_short_name: "Defectum"
+judge_12_short_name: "Nash"
 
-judge_13_short_name: "DeVito"
-judge_13_long_name: "Justice Joseph \"Joey\" DeVito\n§YGhoul Supreme Court Justice.§!"
-judge_13_desc: "\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78"
-judge_13_hidden_idea: "Judge: Justice Joseph \"Joey\" DeVito"
+judge_13_short_name: "Gardner"
+judge_13_long_name: "Megan Gardner"
+
+judge_14_short_name: "Jacoren"
+
+judge_15_short_name: "Montoya"
+
+judge_16_short_name: "Knox"
+
+judge_17_short_name: "Jacobson"
+
+judge_18_short_name: "Daugherty"
+
+judge_19_short_name: "Lee"
+
+judge_20_short_name: "Hill"
+
+judge_21_short_name: "Peterson"
+
+judge_22_short_name: "Crocker"
+
+judge_23_short_name: "Hanlon"
+
+judge_24_short_name: "Flynn"
+
+judge_25_short_name: "DeVito"
