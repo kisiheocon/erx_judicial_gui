@@ -53,10 +53,31 @@ clear_com_judges = {
 judges_list_button_click_scripted_effect = {
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
 
-	if = {
-		limit = { check_variable = { judges_list_array^judges_idx = 13 } }
-		judge_hire_13_scripted_effect = yes
-	}
+	if = { limit = { check_variable = { judges_list_array^judges_idx = 3 } } judge_hire_3_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 4 } } judge_hire_4_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 5 } } judge_hire_5_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 6 } } judge_hire_6_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 7 } } judge_hire_7_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 8 } } judge_hire_8_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 9 } } judge_hire_9_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 10 } } judge_hire_10_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 11 } } judge_hire_11_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 12 } } judge_hire_12_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 13 } } judge_hire_13_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 14 } } judge_hire_14_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 15 } } judge_hire_15_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 16 } } judge_hire_16_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 17 } } judge_hire_17_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 18 } } judge_hire_18_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 19 } } judge_hire_19_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 20 } } judge_hire_20_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 21 } } judge_hire_21_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 22 } } judge_hire_22_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 23 } } judge_hire_23_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 24 } } judge_hire_24_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 25 } } judge_hire_25_scripted_effect = yes }
+
+	else_if = { limit = { check_variable = { judges_list_array^judges_idx = 35 } } judge_hire_35_scripted_effect = yes }
 
 	remove_from_array = { judges_list_array = judges_list_array^judges_idx }
 	set_country_flag = {  flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
@@ -67,10 +88,31 @@ judges_list_button_click_scripted_effect = {
 judge_current_fire_button_click_scripted_effect = {
 	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
 
-	if = {
-		limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } }
-		judge_fire_13_scripted_effect = yes
-	}
+	if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 3 } } judge_fire_3_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 4 } } judge_fire_4_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 5 } } judge_fire_5_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 6 } } judge_fire_6_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } judge_fire_7_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 8 } } judge_fire_8_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 9 } } judge_fire_9_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 10 } } judge_fire_10_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 11 } } judge_fire_11_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 12 } } judge_fire_12_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 13 } } judge_fire_13_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 14 } } judge_fire_14_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 15 } } judge_fire_15_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 16 } } judge_fire_16_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 17 } } judge_fire_17_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 18 } } judge_fire_18_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 19 } } judge_fire_19_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 20 } } judge_fire_20_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 21 } } judge_fire_21_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 22 } } judge_fire_22_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 23 } } judge_fire_23_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 24 } } judge_fire_24_scripted_effect = yes }
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 25 } } judge_fire_25_scripted_effect = yes }
+
+	else_if = { limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 35 } } judge_fire_35_scripted_effect = yes }
 
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
 	set_country_flag = { flag = judicial_recently_fired_flag days = 5 value = 1 } #Flag for cooldown
@@ -83,24 +125,172 @@ judge_hire_2_scripted_effect = {
 	remove_from_array = { judges_list_array = 2 }
 }
 
-##DeVito - 13
-judge_hire_13_scripted_effect = {
-	add_political_power = -50
-	add_ideas = judge_13_hidden_idea
+## Scripted Effects for the other judges ##
+judge_hire_3_scripted_effect = {
+	add_ideas = judge_3_hidden_idea
+}
+judge_fire_3_scripted_effect = {
+	remove_ideas = judge_3_hidden_idea
 }
 
+judge_hire_4_scripted_effect = {
+	add_ideas = judge_4_hidden_idea
+}
+judge_fire_4_scripted_effect = {
+	remove_ideas = judge_4_hidden_idea
+}
+
+judge_hire_5_scripted_effect = {
+	add_ideas = judge_5_hidden_idea
+}
+judge_fire_5_scripted_effect = {
+	remove_ideas = judge_5_hidden_idea
+}
+
+judge_hire_6_scripted_effect = {
+	add_ideas = judge_6_hidden_idea
+}
+judge_fire_6_scripted_effect = {
+	remove_ideas = judge_6_hidden_idea
+}
+
+judge_hire_7_scripted_effect = {
+	add_ideas = judge_7_hidden_idea
+}
+judge_fire_7_scripted_effect = {
+	remove_ideas = judge_7_hidden_idea
+}
+
+judge_hire_8_scripted_effect = {
+	add_ideas = judge_8_hidden_idea
+}
+judge_fire_8_scripted_effect = {
+	remove_ideas = judge_8_hidden_idea
+}
+
+judge_hire_9_scripted_effect = {
+	add_ideas = judge_9_hidden_idea
+}
+judge_fire_9_scripted_effect = {
+	remove_ideas = judge_9_hidden_idea
+}
+
+judge_hire_10_scripted_effect = {
+	add_ideas = judge_10_hidden_idea
+}
+judge_fire_10_scripted_effect = {
+	remove_ideas = judge_10_hidden_idea
+}
+
+judge_hire_11_scripted_effect = {
+	add_ideas = judge_11_hidden_idea
+}
+judge_fire_11_scripted_effect = {
+	remove_ideas = judge_11_hidden_idea
+}
+
+judge_hire_12_scripted_effect = {
+	add_ideas = judge_12_hidden_idea
+}
+judge_fire_12_scripted_effect = {
+	remove_ideas = judge_12_hidden_idea
+}
+
+judge_hire_13_scripted_effect = {
+	add_ideas = judge_13_hidden_idea
+}
 judge_fire_13_scripted_effect = {
 	remove_ideas = judge_13_hidden_idea
 }
 
-remove_devito = {
-	remove_from_array = { judges_list_array = 13 }
+judge_hire_14_scripted_effect = {
+	add_ideas = judge_14_hidden_idea
+}
+judge_fire_14_scripted_effect = {
+	remove_ideas = judge_14_hidden_idea
 }
 
-add_devito = {
-	add_to_array = { judges_list_array = 13 }
+judge_hire_15_scripted_effect = {
+	add_ideas = judge_15_hidden_idea
+}
+judge_fire_15_scripted_effect = {
+	remove_ideas = judge_15_hidden_idea
 }
 
-add_devito_nwp = {
-	add_to_array = { judges_party_people_array = 13 }	
+judge_hire_16_scripted_effect = {
+	add_ideas = judge_16_hidden_idea
+}
+judge_fire_16_scripted_effect = {
+	remove_ideas = judge_16_hidden_idea
+}
+
+judge_hire_17_scripted_effect = {
+	add_ideas = judge_17_hidden_idea
+}
+judge_fire_17_scripted_effect = {
+	remove_ideas = judge_17_hidden_idea
+}
+
+judge_hire_18_scripted_effect = {
+	add_ideas = judge_18_hidden_idea
+}
+judge_fire_18_scripted_effect = {
+	remove_ideas = judge_18_hidden_idea
+}
+
+judge_hire_19_scripted_effect = {
+	add_ideas = judge_19_hidden_idea
+}
+judge_fire_19_scripted_effect = {
+	remove_ideas = judge_19_hidden_idea
+}
+
+judge_hire_20_scripted_effect = {
+	add_ideas = judge_20_hidden_idea
+}
+judge_fire_20_scripted_effect = {
+	remove_ideas = judge_20_hidden_idea
+}
+
+judge_hire_21_scripted_effect = {
+	add_ideas = judge_21_hidden_idea
+}
+judge_fire_21_scripted_effect = {
+	remove_ideas = judge_21_hidden_idea
+}
+
+judge_hire_22_scripted_effect = {
+	add_ideas = judge_22_hidden_idea
+}
+judge_fire_22_scripted_effect = {
+	remove_ideas = judge_22_hidden_idea
+}
+
+judge_hire_23_scripted_effect = {
+	add_ideas = judge_23_hidden_idea
+}
+judge_fire_23_scripted_effect = {
+	remove_ideas = judge_23_hidden_idea
+}
+
+judge_hire_24_scripted_effect = {
+	add_ideas = judge_24_hidden_idea
+}
+judge_fire_24_scripted_effect = {
+	remove_ideas = judge_24_hidden_idea
+}
+
+judge_hire_25_scripted_effect = {
+	add_ideas = judge_25_hidden_idea
+}
+judge_fire_25_scripted_effect = {
+	remove_ideas = judge_25_hidden_idea
+}
+
+
+judge_hire_35_scripted_effect = {
+	add_ideas = judge_35_hidden_idea
+}
+judge_fire_35_scripted_effect = {
+	remove_ideas = judge_35_hidden_idea
 }

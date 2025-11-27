@@ -87,7 +87,7 @@ resistance_damage_to_garrison = 0.04
 
 16: Cadence Knox
 intellectuals_drift = 0.03
-caps_income_modifier = -0.005
+caps_income_modifier = -0.05
 compliance_gain = 0.04
 
 

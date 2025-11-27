@@ -22,12 +22,6 @@ judges_list_button_click_enabled_scripted_trigger = {
 				always = no
 			}
 		}
-		if = {
-			limit = { check_variable = { judges_list_array^judges_idx = 13 } }
-			has_political_power > 49
-			has_stability > 0.6
-			has_completed_focus = ncr_founding_myth
-		}
 	}
 }
 

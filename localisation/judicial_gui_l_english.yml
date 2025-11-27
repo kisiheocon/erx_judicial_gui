@@ -46,52 +46,148 @@ judge_2_desc: "\"Hey! Yankee fucker! Put the description here.\"\n - Zachtou78"
 judge_2_hidden_idea: "Chief Justice: Elizabeth Talbot"
 
 judge_3_short_name: "Davis"
-judge_3_long_name: "Adam Davis"
-judge_3_desc: "3rd Desc"
+judge_3_long_name: "Justice Adam Davis"
+judge_3_hidden_idea: "Justice: Adam Davis"
 
 judge_4_short_name: "Yates"
-judge_4_long_name: "Geraldine Yates"
-judge_4_desc: "4th Desc"
+judge_4_long_name: "Justice Geraldine Yates"
+judge_4_hidden_idea: "Justice: Geraldine Yates"
 
 judge_5_short_name: "Buck"
+judge_5_long_name: "Justice Chaya Buck"
+judge_5_hidden_idea: "Justice: Chaya Buck"
 
 judge_6_short_name: "Carbone"
+judge_6_long_name: "Justice Katherine Carbone"
+judge_6_hidden_idea: "Justice: Katherine Carbone"
 
 judge_7_short_name: "Liam"
+judge_7_long_name: "Justice James Liam"
+judge_7_hidden_idea: "Justice: James Liam"
 
 judge_8_short_name: "Robertson"
+judge_8_long_name: "Justice Oliver Robertson"
+judge_8_hidden_idea: "Justice: Oliver Robertson"
 
 judge_9_short_name: "Darkwater"
+judge_9_long_name: "Justice Killian Darkwater III"
+judge_9_hidden_idea: "Justice: Killian Darkwater III"
 
 judge_10_short_name: "Gizmo"
+judge_10_long_name: "Justice James Gizmo IV"
+judge_10_hidden_idea: "Justice: James Gizmo IV"
 
 judge_11_short_name: "Smith"
+judge_11_long_name: "Justice Reuben Smith"
+judge_11_hidden_idea: "Justice: Reuben Smith"
 
 judge_12_short_name: "Nash"
+judge_12_long_name: "Justice Lucas Nash"
+judge_12_hidden_idea: "Justice: Lucas Nash"
 
 judge_13_short_name: "Gardner"
-judge_13_long_name: "Megan Gardner"
+judge_13_long_name: "Justice Megan Gardner"
+judge_13_hidden_idea: "Justice: Megan Gardner"
 
 judge_14_short_name: "Jacoren"
+judge_14_long_name: "Justice Kenneth Jacoren"
+judge_14_hidden_idea: "Justice: Kenneth Jacoren"
 
 judge_15_short_name: "Montoya"
+judge_15_long_name: "Justice Junior Montoya"
+judge_15_hidden_idea: "Justice: Junior Montoya"
 
 judge_16_short_name: "Knox"
+judge_16_long_name: "Justice Cadence Knox"
+judge_16_hidden_idea: "Justice: Cadence Knox"
 
 judge_17_short_name: "Jacobson"
+judge_17_long_name: "Justice Bowen Jacobson"
+judge_17_hidden_idea: "Justice: Bowen Jacobson"
 
 judge_18_short_name: "Daugherty"
+judge_18_long_name: "Justice Jace Daugherty"
+judge_18_hidden_idea: "Justice: Jace Daugherty"
 
 judge_19_short_name: "Lee"
+judge_19_long_name: "Justice Callum Lee"
+judge_19_hidden_idea: "Justice: Callum Lee"
 
 judge_20_short_name: "Hill"
+judge_20_long_name: "Justice Clem Hill"
+judge_20_hidden_idea: "Justice: Clem Hill"
 
 judge_21_short_name: "Peterson"
+judge_21_long_name: "Justice Wendell Peterson"
+judge_21_hidden_idea: "Justice: Wendell Peterson"
 
 judge_22_short_name: "Crocker"
+judge_22_long_name: "Justice Dennis Crocker"
+judge_22_hidden_idea: "Justice: Dennis Crocker"
 
 judge_23_short_name: "Hanlon"
+judge_23_long_name: "Justice Kris Hanlon"
+judge_23_hidden_idea: "Justice: Kris Hanlon"
 
 judge_24_short_name: "Flynn"
+judge_24_long_name: "Justice Anton Flynn"
+judge_24_hidden_idea: "Justice: Anton Flynn"
 
 judge_25_short_name: "DeVito"
+judge_25_long_name: "Justice Joseph \"Joey\" DeVito\n§YGhoul Supreme Court Justice.§!"
+judge_25_hidden_idea: "Justice: Joseph \"Joey\" DeVito"
+
+judge_26_short_name: "Reed"
+judge_26_long_name: "Justice Jasmin Reed"
+
+judge_27_short_name: "Santiago"
+judge_27_long_name: "Justice Jenny Santiago"
+
+judge_28_short_name: "Leblanc"
+judge_28_long_name: "Justice Chris Leblanc"
+
+judge_29_short_name: "Cunningham"
+judge_29_long_name: "Justice Frankie Cunningham"
+
+judge_30_short_name: "Finch"
+judge_30_long_name: "Justice Cassius Finch"
+
+judge_31_short_name: "McBaker"
+judge_31_long_name: "Justice Garner McBaker"
+
+judge_32_short_name: "Carter"
+judge_32_long_name: "Justice Natasha Carter"
+
+judge_33_short_name: "Daal'Va"
+judge_33_long_name: "Justice Daal'Va"
+
+judge_34_short_name: "Al'a"
+judge_34_long_name: "Justice Al'a"
+
+judge_35_short_name: "Mumnuagh"
+judge_35_long_name: "Justice Mummanmunaugh"
+judge_35_hidden_idea: "Justice: Mummanmunaugh"
+
+judge_36_short_name: "Marcus"
+judge_36_long_name: "Justice Marcus"
+
+judge_37_short_name: "Geraldine"
+judge_37_long_name: "Justice Geraldine"
+
+judge_38_short_name: "Lewis"
+judge_38_long_name: "Justice Lewis"
+
+judge_39_short_name: "Archibald"
+judge_39_long_name: "Justice Archibald"
+
+judge_40_short_name: "Erickson"
+judge_40_long_name: "Justice Erickson"
+
+judge_41_short_name: "Constance"
+judge_41_long_name: "Justice Constance"
+
+judge_42_short_name: "Jay"
+judge_42_long_name: "Justice Tony Jay"
+
+judge_43_short_name: "Zishah-2"
+judge_43_long_name: "Justice Zishah-2"
