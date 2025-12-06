@@ -3,23 +3,25 @@
 ##Commonwealth Names - These shouldn't be touch ever so it's not written to be modifiable-friendly
 defined_text = {
 	name = GetComName
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 0 } } localization_key = com_0_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 1 } } localization_key = com_1_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 2 } } localization_key = com_2_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 3 } } localization_key = com_3_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 4 } } localization_key = com_4_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 5 } } localization_key = com_5_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 6 } } localization_key = com_6_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 7 } } localization_key = com_7_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 8 } } localization_key = com_8_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 9 } } localization_key = com_9_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 10 } } localization_key = com_10_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 11 } } localization_key = com_11_name }
-	text = { trigger = { check_variable = { judicial_gui_selected_com_var = 12 } } localization_key = com_12_name }
-	text = { localization_key = judge_missing_loc }
+	text = { localization_key = com_[?judicial_gui_selected_com_var]_name }
 }
 
 ##Current Appointed Judge in selected Commonwealth
+#Current - Short Name - These shouldn't be touch directly in here
+defined_text = {
+	name = GetCurrentJudgeShortName
+	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_short_name }
+}
+#Current - Long Name - These shouldn't be touch directly in here
+defined_text = {
+	name = GetCurrentJudgeLongName
+	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_long_name }
+}
+#Current - Description - These shouldn't be touch directly in here
+defined_text = {
+	name = GetCurrentJudgeDesc
+	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_desc }
+}
 #Current - Party - These shouldn't be touch directly in here
 defined_text = {
 	name = GetCurrentJudgePartyName
@@ -31,6 +33,21 @@ defined_text = {
 }
 
 ##Judges in list that hasn't been appointed
+#List - Short Name - These shouldn't be touch directly in here
+defined_text = {
+	name = GetJudgeShortName
+	text = { localization_key = judge_[?judges_list_array^judges_idx]_short_name }
+}
+#List - Long Name - These shouldn't be touch directly in here
+defined_text = {
+	name = GetJudgeLongName
+	text = { localization_key = judge_[?judges_list_array^judges_idx]_long_name }
+}
+#List - Description - These shouldn't be touch directly in here
+defined_text = {
+	name = GetJudgeDesc
+	text = { localization_key = judge_[?judges_list_array^judges_idx]_desc }
+}
 #List - Party - These shouldn't be touch directly in here
 defined_text = {
 	name = GetJudgePartyName
