@@ -74,9 +74,9 @@ judge_current_fire_button_click_scripted_effect = {
 		}
 		JUDGE_ID = "[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]"
 	}
-
-	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
+	
 	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
+	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
 	set_country_flag = { flag = judicial_recently_fired_flag days = 5 value = 1 } #Flag for cooldown
 }
 

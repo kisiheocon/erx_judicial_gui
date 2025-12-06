@@ -168,10 +168,129 @@ ideas = {
 				stability_factor = -0.02
 			}
 		}
+		judge_26_hidden_idea = {
+			modifier = {
+				ruler_drift = 0.04
+				stability_weekly  = -0.01
+				compliance_gain = 0.04
+			}
+		}
+		judge_27_hidden_idea = {
+			modifier = {
+				people_drift = 0.03
+				political_power_factor = 0.03
+				compliance_gain = -0.03
+			}
+		}
+		judge_28_hidden_idea = {
+			modifier = {
+				intellectuals_drift = 0.02
+				resistance_damage_to_garrison = -0.04
+				political_power_factor = -0.02
+			}
+		}
+		judge_29_hidden_idea = {
+			modifier = {
+				elites_drift = 0.02
+				resistance_decay = -0.03
+				caps_income_modifier = -0.07
+			}
+		}
+		judge_30_hidden_idea = {
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.02
+				recruitable_population_factor = 0.05
+			}
+		}
+		judge_31_hidden_idea = {
+			modifier = {
+				ruler_drift = 0.04
+				resistance_decay = 0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+		judge_32_hidden_idea = {
+			modifier = {
+				intellectuals_drift = 0.02
+				starting_compliance = 0.05
+				political_power_factor = -0.04
+			}
+		}
+		judge_33_hidden_idea = {
+			modifier = {
+				people_drift = 0.03
+				stability_weekly  = -0.02
+				offensive_war_stability_factor = 0.04
+			}
+		}
+		judge_34_hidden_idea = {
+			modifier = {
+				intellectuals_drift = 0.03
+				political_power_factor = -0.02
+				monthly_population = 0.03
+			}
+		}
 		judge_35_hidden_idea = {
 			modifier = {
 				elites_drift = 0.06
 				caps_income_modifier = 0.12
+				stability_factor = -0.08
+			}
+		}
+		judge_36_hidden_idea = {
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.04
+				political_power_factor = 0.04
+				war_support_factor = -0.08
+				stability_factor = -0.02
+			}
+		}
+		judge_37_hidden_idea = {
+			modifier = {
+				intellectuals_drift = 0.04
+				war_support_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+		judge_38_hidden_idea = {
+			modifier = {
+				people_drift = 0.03
+				resistance_damage_to_garrison = -0.04
+				stability_factor = -0.02
+			}
+		}
+		judge_39_hidden_idea = {
+			modifier = {
+				ruler_drift = 0.03
+				compliance_gain = 0.02
+				stability_factor = -0.02
+			}
+		}
+		judge_40_hidden_idea = {
+			modifier = {
+				intellectuals_drift = 0.04
+				resistance_decay = -0.03
+				stability_factor = -0.02
+			}
+		}
+		judge_41_hidden_idea = {
+			modifier = {
+				elites_drift = 0.03
+				caps_income_modifier = 0.11
+				stability_factor = -0.02
+			}
+		}
+		judge_42_hidden_idea = {
+			modifier = {
+				ruler_drift = 0.04
+				starting_compliance = 0.02
+				stability_factor = -0.02
+			}
+		}
+		judge_43_hidden_idea = {
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.04
+				political_power_factor = -0.02
 				stability_factor = -0.08
 			}
 		}
