@@ -317,6 +317,7 @@ guiTypes = {
 			margin = { left = 2 right = 23 top = 15 bottom = 15 }
 			verticalScrollbar = "right_vertical_slider"
 			smooth_scrolling = yes
+			scroll_wheel_factor = 50
 
 			background = {
 				name = "background"
