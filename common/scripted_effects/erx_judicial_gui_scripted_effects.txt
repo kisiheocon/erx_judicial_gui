@@ -52,11 +52,15 @@ clear_com_judges = {
 #Effect - Hiring a judge from list
 judges_list_button_click_scripted_effect = {
 	meta_effect = {
-		text = { 
+		text = {
 			add_ideas = judge_[JUDGE_ID]_hidden_idea
-			hidden_effect  = { judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
+			hidden_effect = { judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
 		}
 		JUDGE_ID = "[?judges_list_array^judges_idx]"
+	}
+	if = {
+		limit = { judges_list_button_click_enabled_scripted_trigger = no }
+		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 
 	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
@@ -82,9 +86,16 @@ judges_list_button_alt_right_click_scripted_effect = {
 #Effect - Firing a judge from list
 judge_current_fire_button_click_scripted_effect = {
 	meta_effect = {
-		text = { 
-			remove_ideas = judge_[JUDGE_ID]_hidden_idea
-			judge_fire_[JUDGE_ID]_scripted_effect = yes #For unique judges with special effects when fired
+		text = {
+			if = {
+				limit = { NOT = { check_variable = { [JUDGE_ID] = 1 } } }
+				remove_ideas = judge_[JUDGE_ID]_hidden_idea
+				hidden_effect = { judge_fire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when fired
+				if = {
+					limit = { judge_current_fire_button_click_enabled_scripted_trigger = no }
+					custom_effect_tooltip = generic_skip_one_line_tt
+				}
+			}
 		}
 		JUDGE_ID = "[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]"
 	}
