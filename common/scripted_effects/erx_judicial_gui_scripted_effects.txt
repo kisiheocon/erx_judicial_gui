@@ -54,7 +54,7 @@ judges_list_button_click_scripted_effect = {
 	meta_effect = {
 		text = { 
 			add_ideas = judge_[JUDGE_ID]_hidden_idea
-			judge_hire_[JUDGE_ID]_scripted_effect = yes #For unique judges with special effects when hired
+			hidden_effect  = { judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
 		}
 		JUDGE_ID = "[?judges_list_array^judges_idx]"
 	}
@@ -64,6 +64,20 @@ judges_list_button_click_scripted_effect = {
 	set_country_flag = {  flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
 }
 
+#Fake Effect - Tooltip for Current Judge Modifier
+judges_list_button_alt_right_click_scripted_effect = {
+	effect_tooltip = {
+		meta_effect = {
+			text = {
+				if = {
+					limit = { NOT = { check_variable = { [JUDGE_ID] = 1 } } }
+					add_ideas = judge_[JUDGE_ID]_hidden_idea
+				}
+			}
+			JUDGE_ID = "[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]"
+		}
+	}
+}
 
 #Effect - Firing a judge from list
 judge_current_fire_button_click_scripted_effect = {

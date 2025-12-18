@@ -27,6 +27,7 @@ scripted_gui = {
 		}
 		effects = {
 			judges_list_button_click = { judges_list_button_click_scripted_effect = yes }
+			judges_list_button_alt_right_click = { judges_list_button_alt_right_click_scripted_effect = yes }
 			judge_current_fire_button_click = { judge_current_fire_button_click_scripted_effect = yes }
 		}
 		triggers = {

@@ -31,12 +31,12 @@ party_name_elites: "§0CL§!"
 party_name_ruler: "§WGL§!"
 party_name_neutral: "§gNeutral§!"
 
-judges_list_button_tt: "[GetJudgeLongName]\n\n[GetJudgeModifier]\n[!judges_list_button_click_enabled]"
+judges_list_button_tt: "[GetJudgeLongName]\n\n[!judges_list_button_click]\n[!judges_list_button_click_enabled]"
 judges_list_button_delay_tt: "§L[GetJudgeDesc]§!"
 judge_current_fire_button_tt: "[!judge_current_fire_button_click_enabled]"
 judge_short_name_scripted: "[GetJudgeShortName]"
 judge_current_short_name_scripted: "[GetCurrentJudgeShortName]"
-jude_current_tt: "[GetCurrentJudgeLongName]\n\n[GetCurrentJudgeModifier]"
+jude_current_tt: "[GetCurrentJudgeLongName]\n\n[!judges_list_button_alt_right_click]"
 jude_current_delay_tt: "§L[GetCurrentJudgeDesc]§!"
 
 ##Judges##
