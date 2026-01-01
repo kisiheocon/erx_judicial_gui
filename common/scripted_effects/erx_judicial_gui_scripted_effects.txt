@@ -31,7 +31,7 @@ close_com_all = {
 	set_variable = { erx_common_seat_random^11 = 0 }
 	set_variable = { erx_common_seat_random^12 = 0 }
 }
-#Debug - Clear all appointed judges in the commonwealths
+#Debug - Clear all appointed judges in the commonwealths - this DOES NOT re add the judges back onto the list
 clear_com_judges = {
 	set_variable = { judicial_gui_com_judge_array^0 = 1 }
 	set_variable = { judicial_gui_com_judge_array^1 = 1 }
