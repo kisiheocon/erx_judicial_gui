@@ -2,127 +2,127 @@ spriteTypes = {
 	##Judges GUI
 	#Open Judicial Button
 	spriteType = {
-		name = "GFX_ERB_open_judicial_button"
-		texturefile = "gfx/interface/ERX_judicial_gui/usa_congress_logo.dds"
+		name = "GFX_erx_open_judicial_button"
+		texturefile = "gfx/interface/erx_judicial_gui/usa_congress_logo.dds"
 		transparencecheck = yes
 	}
 	#Judges Portraits
 	spriteType = {
-		name = "GFX_ERB_judges_frame"
-		texturefile = "gfx/interface/ERX_judicial_gui/erb_judges_frame.dds"
+		name = "GFX_erx_judges_frame"
+		texturefile = "gfx/interface/erx_judicial_gui/erx_judges_frame.dds"
 		noOfFrames = 43 #Increase this when adding more judges
 	}
 	#Judge tab
 	spriteType = {
-		name = "GFX_ERB_judges_tab"
-		texturefile = "gfx/interface/ERX_judicial_gui/judges_tab.dds"
+		name = "GFX_erx_judges_tab"
+		texturefile = "gfx/interface/erx_judicial_gui/judges_tab.dds"
 		transparencecheck = yes
 	}
 	#Judge buttons
 	spriteType = {
-		name = "GFX_ERB_judges_button_background"
-		texturefile = "gfx/interface/ERX_judicial_gui/erb_judicial_judges_button_background.dds"
+		name = "GFX_erx_judges_button_background"
+		texturefile = "gfx/interface/erx_judicial_gui/erx_judicial_judges_button_background.dds"
 		transparencecheck = yes
 	}
 	#Fire Button
 	spriteType = {
-		name = "GFX_ERB_judge_fire_button"
-		texturefile = "gfx/interface/ERX_judicial_gui/judge_fire_button.dds"
+		name = "GFX_erx_judge_fire_button"
+		texturefile = "gfx/interface/erx_judicial_gui/judge_fire_button.dds"
 		transparencecheck = yes
 	}
 	#Background
 	spriteType = {
 		name = "GFX_ERX_judicial_com_background"
-		texturefile = "gfx/interface/ERX_judicial_gui/erb_judicial_com_background.dds"
+		texturefile = "gfx/interface/erx_judicial_gui/erx_judicial_com_background.dds"
 	}
 	#Sierra
 	spriteType = {
-		name = "GFX_ERB_erb_com_sierra"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_sierra.dds"
+		name = "GFX_erx_com_sierra"
+		texturefile = "gfx/interface/erx_judicial_gui/com_sierra.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Cascadia
 	spriteType = {
-		name = "GFX_ERB_erb_com_cascadia"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_cascadia.dds"
+		name = "GFX_erx_com_cascadia"
+		texturefile = "gfx/interface/erx_judicial_gui/com_cascadia.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Fourstate
 	spriteType = {
-		name = "GFX_ERB_erb_com_fourstate"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_fourstate.dds"
+		name = "GFX_erx_com_fourstate"
+		texturefile = "gfx/interface/erx_judicial_gui/com_fourstate.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Northern
 	spriteType = {
-		name = "GFX_ERB_erb_com_northern"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_northern.dds"
+		name = "GFX_erx_com_northern"
+		texturefile = "gfx/interface/erx_judicial_gui/com_northern.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Lone Star
 	spriteType = {
-		name = "GFX_ERB_erb_com_lonestar"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_lonestar.dds"
+		name = "GFX_erx_com_lonestar"
+		texturefile = "gfx/interface/erx_judicial_gui/com_lonestar.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Great Lakes
 	spriteType = {
-		name = "GFX_ERB_erb_com_greatlakes"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_greatlakes.dds"
+		name = "GFX_erx_com_greatlakes"
+		texturefile = "gfx/interface/erx_judicial_gui/com_greatlakes.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Midwest
 	spriteType = {
-		name = "GFX_ERB_erb_com_midwest"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_midwest.dds"
+		name = "GFX_erx_com_midwest"
+		texturefile = "gfx/interface/erx_judicial_gui/com_midwest.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Appalachian
 	spriteType = {
-		name = "GFX_ERB_erb_com_appalachian"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_appalachian.dds"
+		name = "GFX_erx_com_appalachian"
+		texturefile = "gfx/interface/erx_judicial_gui/com_appalachian.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Empire
 	spriteType = {
-		name = "GFX_ERB_erb_com_empire"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_empire.dds"
+		name = "GFX_erx_com_empire"
+		texturefile = "gfx/interface/erx_judicial_gui/com_empire.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#New England
 	spriteType = {
-		name = "GFX_ERB_erb_com_england"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_england.dds"
+		name = "GFX_erx_com_england"
+		texturefile = "gfx/interface/erx_judicial_gui/com_england.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Gulf
 	spriteType = {
-		name = "GFX_ERB_erb_com_gulf"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_gulf.dds"
+		name = "GFX_erx_com_gulf"
+		texturefile = "gfx/interface/erx_judicial_gui/com_gulf.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Dixie
 	spriteType = {
-		name = "GFX_ERB_erb_com_dixie"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_dixie.dds"
+		name = "GFX_erx_com_dixie"
+		texturefile = "gfx/interface/erx_judicial_gui/com_dixie.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
 	#Columbia
 	spriteType = {
-		name = "GFX_ERB_erb_com_columbia"
-		texturefile = "gfx/interface/ERX_judicial_gui/com_columbia.dds"
+		name = "GFX_erx_com_columbia"
+		texturefile = "gfx/interface/erx_judicial_gui/com_columbia.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}

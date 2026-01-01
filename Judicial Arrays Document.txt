@@ -15,25 +15,25 @@ NOTE: Below are arrays and informations that are useful and important to keep tr
 
 2. Used to keep track of the judges on the available-for-hire list:
 
-judges_list_array ^ judges_idx = Judge IDs
+erx_judges_list_array ^ erx_judges_idx = Judge IDs
 
-judges_idx = index used for the list to format
+erx_judges_idx = index used for the list to format
 Judge IDs = the Judges IDs
 
 Example: This array should only be fiddle with through scripted effect/trigger, directly messing with it in the gui can cause issues
-judges_list_array^judges_idx = 2 #The judge on the list is Talbot/2 is Talbot's ID
-judges_list_array^judges_idx = 3 #The judge on the list is Devito/3 is Devito's ID
+erx_judges_list_array^erx_judges_idx = 2 #The judge on the list is Talbot/2 is Talbot's ID
+erx_judges_list_array^erx_judges_idx = 3 #The judge on the list is Devito/3 is Devito's ID
 
 Example in-game:
 -Adding a new Judge into the list:
-add_to_arary = { judges_list_array = 3 } #Add DeVito into the available-for-hire list/3 is DeVito's ID
+add_to_arary = { erx_judges_list_array = 3 } #Add DeVito into the available-for-hire list/3 is DeVito's ID
 
 -Removing a Judge from the list:
-remove_from_array = { judges_list_array = 3 } #Remove DeVito from the available-for-hire list/3 is DeVito's ID
+remove_from_array = { erx_judges_list_array = 3 } #Remove DeVito from the available-for-hire list/3 is DeVito's ID
 
--When hire DeVito, give 30 pp. This should only be used in judges_list_button_click_scripted_effect
+-When hire DeVito, give 30 pp. This should only be used in erx_judges_list_button_click_scripted_effect
 if = {
-	limit = { judges_list_array^judges_idx = 3 } #3 is DeVito's ID
+	limit = { erx_judges_list_array^erx_judges_idx = 3 } #3 is DeVito's ID
 	add_political_power = 30
 }
 
@@ -41,7 +41,7 @@ if = {
 NOTE: The system isn't designed to have more than 13 commonwealths, if you want to add more, contact @Deez
 for more information
 
-judicial_gui_com_judge_array ^ index = value
+erx_judicial_gui_com_judge_array ^ index = value
 
 index = which commonwealth
 value = which judge / judge's ID
@@ -61,34 +61,34 @@ value = which judge / judge's ID
 12	Columbia Commonwealth
 
 Example:
-judicial_gui_com_judge_array^0 = Elizabeth Talbot (Cause she will be the only judge in Sierra)
-judicial_gui_com_judge_array^1 = Whatever the ID of the judge employed in Cascadian Commonwealth
+erx_judicial_gui_com_judge_array^0 = Elizabeth Talbot (Cause she will be the only judge in Sierra)
+erx_judicial_gui_com_judge_array^1 = Whatever the ID of the judge employed in Cascadian Commonwealth
 
 Example when used in-game:
 -If Cascadian Commonwealth have DeVito, give 30 political power
 if = {
-	limit = { judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
+	limit = { erx_judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
 	add_political_power = 30
 }
 
 -Assign DeVito as a judge for Cascadian Commonwealth
-#remove_from_array = { judicial_gui_com_judge_array = 3 } #Remove Devito from judge position if he already in a position somewhere (OPTIONAL)
-#remove_from_array = { judges_list_array = 3 } #Remove Devito from the Available-for-hire judge list if he's on the list (OPTIONAL)
-set_variable = { judicial_gui_com_judge_array^1 = 3 } #1 is the ID of Cascadian Commonwealth/3 is the ID of DeVito
+#remove_from_array = { erx_judicial_gui_com_judge_array = 3 } #Remove Devito from judge position if he already in a position somewhere (OPTIONAL)
+#remove_from_array = { erx_judges_list_array = 3 } #Remove Devito from the Available-for-hire judge list if he's on the list (OPTIONAL)
+set_variable = { erx_judicial_gui_com_judge_array^1 = 3 } #1 is the ID of Cascadian Commonwealth/3 is the ID of DeVito
 
 -Remove Devito if he's a judge for Cascadian Commonwealth
 if = {
-	limit = { judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
-	set_variable = { judicial_gui_com_judge_array^1 = 1 } #1 is the ID of Cascadian Commonwealth/1 is the ID of Empty
-	#add_to_arary = { judges_list_array = 3 } #3 is the ID of Devito, add him back to the available-for-hire list (OPTIONAL)
+	limit = { erx_judicial_gui_com_judge_array^1 = 3 } #If the judge of Cascadian Commonwealth is DeVito
+	set_variable = { erx_judicial_gui_com_judge_array^1 = 1 } #1 is the ID of Cascadian Commonwealth/1 is the ID of Empty
+	#add_to_arary = { erx_judges_list_array = 3 } #3 is the ID of Devito, add him back to the available-for-hire list (OPTIONAL)
 }
 
 4. Used to keep track of judges's party affiliation
 
-judges_party_people_array			#People
-judges_party_intellectuals_array	#Intellectuals
-judges_party_elites_array			#Elites
-judges_party_ruler_array			#Ruler
+erx_judges_party_people_array			#People
+erx_judges_party_intellectuals_array	#Intellectuals
+erx_judges_party_elites_array			#Elites
+erx_judges_party_ruler_array			#Ruler
 
 Loc Keys:
 party_name_people					#NWP	New World Party
@@ -100,10 +100,10 @@ party_name_neutral	#When a character isn't assigned to a party it will default t
 Example:
 -Add DeVito to ruler party affiliation:
 ##Remove DeVito from other party first, this might not needed if the character won't ever switch party
-#remove_from_array = { judges_party_people_array = 3 } #3 is the ID of DeVito
-#remove_from_array = { judges_party_intellectuals_array = 3 } #3 is the ID of DeVito
-#remove_from_array = { judges_party_elites_array = 3 } #3 is the ID of DeVito
-add_to_array = { judges_party_ruler_array = 3 } #3 is the ID of DeVito
+#remove_from_array = { erx_judges_party_people_array = 3 } #3 is the ID of DeVito
+#remove_from_array = { erx_judges_party_intellectuals_array = 3 } #3 is the ID of DeVito
+#remove_from_array = { erx_judges_party_elites_array = 3 } #3 is the ID of DeVito
+add_to_array = { erx_judges_party_ruler_array = 3 } #3 is the ID of DeVito
 
 -If DeVito is in New World Party/People, give 30 political power:
 if = {

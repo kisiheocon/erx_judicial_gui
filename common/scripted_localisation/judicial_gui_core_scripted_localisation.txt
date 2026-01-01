@@ -3,32 +3,32 @@
 ##Commonwealth Names - These shouldn't be touch ever so it's not written to be modifiable-friendly
 defined_text = {
 	name = GetComName
-	text = { localization_key = com_[?judicial_gui_selected_com_var]_name }
+	text = { localization_key = com_[?erx_judicial_gui_selected_com_var]_name }
 }
 
 ##Current Appointed Judge in selected Commonwealth
 #Current - Short Name - These shouldn't be touch directly in here
 defined_text = {
 	name = GetCurrentJudgeShortName
-	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_short_name }
+	text = { localization_key = judge_[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]_short_name }
 }
 #Current - Long Name - These shouldn't be touch directly in here
 defined_text = {
 	name = GetCurrentJudgeLongName
-	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_long_name }
+	text = { localization_key = judge_[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]_long_name }
 }
 #Current - Description - These shouldn't be touch directly in here
 defined_text = {
 	name = GetCurrentJudgeDesc
-	text = { localization_key = judge_[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]_desc }
+	text = { localization_key = judge_[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]_desc }
 }
 #Current - Party - These shouldn't be touch directly in here
 defined_text = {
 	name = GetCurrentJudgePartyName
-	text = { trigger = { is_in_array = { judges_party_people_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_people }
-	text = { trigger = { is_in_array = { judges_party_intellectuals_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_intellectuals }
-	text = { trigger = { is_in_array = { judges_party_elites_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_elites }
-	text = { trigger = { is_in_array = { judges_party_ruler_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var } } localization_key = party_name_ruler }
+	text = { trigger = { is_in_array = { erx_judges_party_people_array = erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var } } localization_key = party_name_people }
+	text = { trigger = { is_in_array = { erx_judges_party_intellectuals_array = erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var } } localization_key = party_name_intellectuals }
+	text = { trigger = { is_in_array = { erx_judges_party_elites_array = erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var } } localization_key = party_name_elites }
+	text = { trigger = { is_in_array = { erx_judges_party_ruler_array = erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var } } localization_key = party_name_ruler }
 	text = { localization_key = party_name_neutral }
 }
 
@@ -36,24 +36,24 @@ defined_text = {
 #List - Short Name - These shouldn't be touch directly in here
 defined_text = {
 	name = GetJudgeShortName
-	text = { localization_key = judge_[?judges_list_array^judges_idx]_short_name }
+	text = { localization_key = judge_[?erx_judges_list_array^erx_judges_idx]_short_name }
 }
 #List - Long Name - These shouldn't be touch directly in here
 defined_text = {
 	name = GetJudgeLongName
-	text = { localization_key = judge_[?judges_list_array^judges_idx]_long_name }
+	text = { localization_key = judge_[?erx_judges_list_array^erx_judges_idx]_long_name }
 }
 #List - Description - These shouldn't be touch directly in here
 defined_text = {
 	name = GetJudgeDesc
-	text = { localization_key = judge_[?judges_list_array^judges_idx]_desc }
+	text = { localization_key = judge_[?erx_judges_list_array^erx_judges_idx]_desc }
 }
 #List - Party - These shouldn't be touch directly in here
 defined_text = {
 	name = GetJudgePartyName
-	text = { trigger = { is_in_array = { judges_party_people_array = judges_list_array^judges_idx } } localization_key = party_name_people }
-	text = { trigger = { is_in_array = { judges_party_intellectuals_array = judges_list_array^judges_idx } } localization_key = party_name_intellectuals }
-	text = { trigger = { is_in_array = { judges_party_elites_array = judges_list_array^judges_idx } } localization_key = party_name_elites }
-	text = { trigger = { is_in_array = { judges_party_ruler_array = judges_list_array^judges_idx } } localization_key = party_name_ruler }
+	text = { trigger = { is_in_array = { erx_judges_party_people_array = erx_judges_list_array^erx_judges_idx } } localization_key = party_name_people }
+	text = { trigger = { is_in_array = { erx_judges_party_intellectuals_array = erx_judges_list_array^erx_judges_idx } } localization_key = party_name_intellectuals }
+	text = { trigger = { is_in_array = { erx_judges_party_elites_array = erx_judges_list_array^erx_judges_idx } } localization_key = party_name_elites }
+	text = { trigger = { is_in_array = { erx_judges_party_ruler_array = erx_judges_list_array^erx_judges_idx } } localization_key = party_name_ruler }
 	text = { localization_key = party_name_neutral }
 }

@@ -8,7 +8,7 @@
 add this country flag into the tag: show_judicial_gui_flag
 
 ###Step 1: Add the Portrait GFXs
-Portrait location: gfx/interface/ERX_judicial_gui/erb_judges_frame.dds
+Portrait location: gfx/interface/erx_judicial_gui/erx_judges_frame.dds
 There are two way to do this
 Either:
 
@@ -19,10 +19,10 @@ OR
 Add the new portrait at the end of the image file
 
 NOTE:If Adding a new portrait at the end, you will need to go to interface/erx_judicial_gui.gfx
-and change the spriteType GFX_ERB_judges_frame noOfFrames attribute by + 1
+and change the spriteType GFX_erx_judges_frame noOfFrames attribute by + 1
 
 -The Placement of the Portrait GFXs will be used to display for the judges in-game.
-Check gfx/interface/ERX_judicial_gui/erb_judges_frame_template to see the placement example with the character IDs written on each frame
+Check gfx/interface/erx_judicial_gui/erx_judges_frame_template to see the placement example with the character IDs written on each frame
 
 -The process of adding a new portrait is pretty self-explanatory, to whoever adding new judge reading this but can't
 do that part, it's really a skill issue. Please contact @Deez or @SouthernHero for more information
@@ -32,12 +32,12 @@ Let's pretend the new character have the ID of 7
 
 Run the effect to add the player to the list of available judge list (Optional)
 
-add_to_arary = { judges_list_array = 7 }
+add_to_arary = { erx_judges_list_array = 7 }
 
 Run the effect to assign the judge directly to a commonwealth (Optional)
 Lone Star Commonwealth's ID is 4
 
-set_variable = { judicial_gui_com_judge_array^4 = 7 }
+set_variable = { erx_judicial_gui_com_judge_array^4 = 7 }
 
 Check if the judge's portrait show up in either available-for-hire list or in any of the 's judge position to see if the character is added
 -If yes, continue. If not contact @Deez for more information
@@ -46,10 +46,10 @@ Check if the judge's portrait show up in either available-for-hire list or in an
 Let's pretend the new character have the ID of 7
 The system use arrays to keep track of which party the characters support, pick 1 below:
 
-add_to_array = { judges_party_people_array = 7 }			#People - New World Party
-add_to_array = { judges_party_intellectuals_array = 7 }		#Intellectual - Torch Party - Socialism Superiority - The best party in the game - Sponsored by the Socialist Republic of Vietnam - @Deez
-add_to_array = { judges_party_elites_array = 7 }			#Elites - Citizen's League
-add_to_array = { judges_party_ruler_array = 7 }				#Ruler - Granite Loyalist
+add_to_array = { erx_judges_party_people_array = 7 }			#People - New World Party
+add_to_array = { erx_judges_party_intellectuals_array = 7 }		#Intellectual - Torch Party - Socialism Superiority - The best party in the game - Sponsored by the Socialist Republic of Vietnam - @Deez
+add_to_array = { erx_judges_party_elites_array = 7 }			#Elites - Citizen's League
+add_to_array = { erx_judges_party_ruler_array = 7 }				#Ruler - Granite Loyalist
 
 The system will automatically display their party affiliation in-game, usually below their name in the GUI
 If not added to one of the above arrays, their party affiliation will default to Neutral
@@ -71,23 +71,23 @@ List: Used to displayer the character's information when they are on the availab
 
 For Current: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
 GetCurrentJudgeShortName:
-text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_short_name }
+text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_short_name }
 
 GetCurrentJudgeLongName:
-text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_long_name }
+text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_long_name }
 
 GetCurrentJudgeDesc
-text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = judge_7_desc }
+text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_desc }
 
 For List: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
 GetJudgeShortName
-text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_short_name }
+text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_short_name }
 
 GetJudgeLongName
-text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_long_name }
+text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_long_name }
 
 GetJudgeDesc
-text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = judge_7_desc }
+text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_desc }
 
 ###Step 5: Add a modifier
 The Judge's modifiers are actually hidden ideas stored in common/ideas/erx_judicial_ideas.txt
@@ -102,21 +102,21 @@ judge_7_hidden_idea = {
 
 Give the idea to the hire/fire scripted effects of the character
 
-judge_hire_7_scripted_effect = {
+erx_judge_hire_7_scripted_effect = {
 	add_ideas = judge_7_hidden_idea
 }
 
-judge_fire_7_scripted_effect = {
+erx_judge_fire_7_scripted_effect = {
 	remove_ideas = judge_7_hidden_idea
 }
 
 For scripted loc check the two loc key and follow their format
 
 GetCurrentJudgeModifier
-text = { trigger = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
+text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
 
 GetJudgeModifier
-text = { trigger = { check_variable = { judges_list_array^judges_idx = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
+text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = idea_desc|judge_7_hidden_idea }
 
 ###Step 6: Adding special requirement to hire a judge
 Check the scripted trigger file common/scripted_triggers/erx_judicial_gui_scripted_triggers.txt for more information
@@ -124,7 +124,7 @@ You can copy and paste many of the already set up checks and triggers
 Example:
 
 if = {
-	limit = { check_variable = { judges_list_array^judges_idx = 7 } }
+	limit = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } }
 	has_political_power > 49
 	has_stability > 0.6
 }

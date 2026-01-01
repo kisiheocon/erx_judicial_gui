@@ -1,6 +1,6 @@
 ##Debugs - Only used when modding, it will break mechanics with parliament
 #Debug - Unlock all commonwealth in judicial GUI
-set_up_com_all = {
+erx_set_up_com_all = {
 	set_variable = { erx_common_seat_random^0 = 1 }
 	set_variable = { erx_common_seat_random^1 = 1 }
 	set_variable = { erx_common_seat_random^2 = 1 }
@@ -16,7 +16,7 @@ set_up_com_all = {
 	set_variable = { erx_common_seat_random^12 = 1 }
 }
 #Debug - Close all commonwealth in judicial GUI
-close_com_all = {
+erx_close_com_all = {
 	set_variable = { erx_common_seat_random^0 = 0 }
 	set_variable = { erx_common_seat_random^1 = 0 }
 	set_variable = { erx_common_seat_random^2 = 0 }
@@ -32,44 +32,44 @@ close_com_all = {
 	set_variable = { erx_common_seat_random^12 = 0 }
 }
 #Debug - Clear all appointed judges in the commonwealths - this DOES NOT re add the judges back onto the list
-clear_com_judges = {
-	set_variable = { judicial_gui_com_judge_array^0 = 1 }
-	set_variable = { judicial_gui_com_judge_array^1 = 1 }
-	set_variable = { judicial_gui_com_judge_array^2 = 1 }
-	set_variable = { judicial_gui_com_judge_array^3 = 1 }
-	set_variable = { judicial_gui_com_judge_array^4 = 1 }
-	set_variable = { judicial_gui_com_judge_array^5 = 1 }
-	set_variable = { judicial_gui_com_judge_array^6 = 1 }
-	set_variable = { judicial_gui_com_judge_array^7 = 1 }
-	set_variable = { judicial_gui_com_judge_array^8 = 1 }
-	set_variable = { judicial_gui_com_judge_array^9 = 1 }
-	set_variable = { judicial_gui_com_judge_array^10 = 1 }
-	set_variable = { judicial_gui_com_judge_array^11 = 1 }
-	set_variable = { judicial_gui_com_judge_array^12 = 1 }
+erx_clear_com_judges = {
+	set_variable = { erx_judicial_gui_com_judge_array^0 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^1 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^2 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^3 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^4 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^5 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^6 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^7 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^8 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^9 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^10 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^11 = 1 }
+	set_variable = { erx_judicial_gui_com_judge_array^12 = 1 }
 }
 
 ##Scripted Effects for the GUI
 #Effect - Hiring a judge from list
-judges_list_button_click_scripted_effect = {
+erx_judges_list_button_click_scripted_effect = {
 	meta_effect = {
 		text = {
 			add_ideas = judge_[JUDGE_ID]_hidden_idea
-			hidden_effect = { judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
+			hidden_effect = { erx_judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
 		}
-		JUDGE_ID = "[?judges_list_array^judges_idx]"
+		JUDGE_ID = "[?erx_judges_list_array^erx_judges_idx]"
 	}
 	if = {
 		limit = { judges_list_button_click_enabled_scripted_trigger = no }
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 
-	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = judges_list_array^judges_idx }
-	remove_from_array = { judges_list_array = judges_list_array^judges_idx }
-	set_country_flag = {  flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
+	set_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = erx_judges_list_array^erx_judges_idx }
+	remove_from_array = { erx_judges_list_array = erx_judges_list_array^erx_judges_idx }
+	set_country_flag = { flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
 }
 
 #Fake Effect - Tooltip for Current Judge Modifier
-judges_list_button_alt_right_click_scripted_effect = {
+erx_judges_list_button_alt_right_click_scripted_effect = {
 	effect_tooltip = {
 		meta_effect = {
 			text = {
@@ -78,160 +78,163 @@ judges_list_button_alt_right_click_scripted_effect = {
 					add_ideas = judge_[JUDGE_ID]_hidden_idea
 				}
 			}
-			JUDGE_ID = "[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]"
+			JUDGE_ID = "[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]"
 		}
 	}
 }
 
 #Effect - Firing a judge from list
-judge_current_fire_button_click_scripted_effect = {
+erx_judge_current_fire_button_click_scripted_effect = {
 	meta_effect = {
 		text = {
 			if = {
 				limit = { NOT = { check_variable = { [JUDGE_ID] = 1 } } }
 				remove_ideas = judge_[JUDGE_ID]_hidden_idea
-				hidden_effect = { judge_fire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when fired
+				hidden_effect = { erx_judge_fire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when fired
 				if = {
-					limit = { judge_current_fire_button_click_enabled_scripted_trigger = no }
+					limit = { erx_judge_current_fire_button_click_enabled_scripted_trigger = no }
 					custom_effect_tooltip = generic_skip_one_line_tt
 				}
 			}
 		}
-		JUDGE_ID = "[?judicial_gui_com_judge_array^judicial_gui_selected_com_var]"
+		JUDGE_ID = "[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]"
 	}
 	
-	add_to_array = { judges_list_array = judicial_gui_com_judge_array^judicial_gui_selected_com_var }
-	set_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 }
-	set_country_flag = { flag = judicial_recently_fired_flag days = 5 value = 1 } #Flag for cooldown
+	add_to_array = { erx_judges_list_array = erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var }
+	set_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 1 }
+	set_country_flag = { flag = erx_judicial_recently_fired_flag days = 5 value = 1 } #Flag for cooldown
 }
 
 ## Scripted Effects for unique effects when hired/fired ##
-judge_hire_2_scripted_effect = { #Premade Scripted Effect For Hiring Talbot in Sierra Commonwealth
+erx_judge_hire_1_scripted_effect = { } #Ignore#
+erx_judge_fire_1_scripted_effect = { } #Ignore#
+
+erx_judge_hire_2_scripted_effect = { #Premade Scripted Effect For Hiring Talbot in Sierra Commonwealth
 	add_ideas = judge_2_hidden_idea
-	set_variable = { judicial_gui_com_judge_array^0 = 2 }
-	remove_from_array = { judges_list_array = 2 }
+	set_variable = { erx_judicial_gui_com_judge_array^0 = 2 }
+	remove_from_array = { erx_judges_list_array = 2 }
 }
-judge_fire_2_scripted_effect = { }
+erx_judge_fire_2_scripted_effect = { }
 
-judge_hire_3_scripted_effect = { }
-judge_fire_3_scripted_effect = { }
+erx_judge_hire_3_scripted_effect = { }
+erx_judge_fire_3_scripted_effect = { }
 
-judge_hire_4_scripted_effect = { }
-judge_fire_4_scripted_effect = { }
+erx_judge_hire_4_scripted_effect = { }
+erx_judge_fire_4_scripted_effect = { }
 
-judge_hire_5_scripted_effect = { }
-judge_fire_5_scripted_effect = { }
+erx_judge_hire_5_scripted_effect = { }
+erx_judge_fire_5_scripted_effect = { }
 
-judge_hire_6_scripted_effect = { }
-judge_fire_6_scripted_effect = { }
+erx_judge_hire_6_scripted_effect = { }
+erx_judge_fire_6_scripted_effect = { }
 
-judge_hire_7_scripted_effect = { }
-judge_fire_7_scripted_effect = { }
+erx_judge_hire_7_scripted_effect = { }
+erx_judge_fire_7_scripted_effect = { }
 
-judge_hire_8_scripted_effect = { }
-judge_fire_8_scripted_effect = { }
+erx_judge_hire_8_scripted_effect = { }
+erx_judge_fire_8_scripted_effect = { }
 
-judge_hire_9_scripted_effect = { }
-judge_fire_9_scripted_effect = { }
+erx_judge_hire_9_scripted_effect = { }
+erx_judge_fire_9_scripted_effect = { }
 
-judge_hire_10_scripted_effect = { }
-judge_fire_10_scripted_effect = { }
+erx_judge_hire_10_scripted_effect = { }
+erx_judge_fire_10_scripted_effect = { }
 
-judge_hire_11_scripted_effect = { }
-judge_fire_11_scripted_effect = { }
+erx_judge_hire_11_scripted_effect = { }
+erx_judge_fire_11_scripted_effect = { }
 
-judge_hire_12_scripted_effect = { }
-judge_fire_12_scripted_effect = { }
+erx_judge_hire_12_scripted_effect = { }
+erx_judge_fire_12_scripted_effect = { }
 
-judge_hire_13_scripted_effect = { }
-judge_fire_13_scripted_effect = { }
+erx_judge_hire_13_scripted_effect = { }
+erx_judge_fire_13_scripted_effect = { }
 
-judge_hire_14_scripted_effect = { }
-judge_fire_14_scripted_effect = { }
+erx_judge_hire_14_scripted_effect = { }
+erx_judge_fire_14_scripted_effect = { }
 
-judge_hire_15_scripted_effect = { }
-judge_fire_15_scripted_effect = { }
+erx_judge_hire_15_scripted_effect = { }
+erx_judge_fire_15_scripted_effect = { }
 
-judge_hire_16_scripted_effect = { }
-judge_fire_16_scripted_effect = { }
+erx_judge_hire_16_scripted_effect = { }
+erx_judge_fire_16_scripted_effect = { }
 
-judge_hire_17_scripted_effect = { }
-judge_fire_17_scripted_effect = { }
+erx_judge_hire_17_scripted_effect = { }
+erx_judge_fire_17_scripted_effect = { }
 
-judge_hire_18_scripted_effect = { }
-judge_fire_18_scripted_effect = { }
+erx_judge_hire_18_scripted_effect = { }
+erx_judge_fire_18_scripted_effect = { }
 
-judge_hire_19_scripted_effect = { }
-judge_fire_19_scripted_effect = { }
+erx_judge_hire_19_scripted_effect = { }
+erx_judge_fire_19_scripted_effect = { }
 
-judge_hire_20_scripted_effect = { }
-judge_fire_20_scripted_effect = { }
+erx_judge_hire_20_scripted_effect = { }
+erx_judge_fire_20_scripted_effect = { }
 
-judge_hire_21_scripted_effect = { }
-judge_fire_21_scripted_effect = { }
+erx_judge_hire_21_scripted_effect = { }
+erx_judge_fire_21_scripted_effect = { }
 
-judge_hire_22_scripted_effect = { }
-judge_fire_22_scripted_effect = { }
+erx_judge_hire_22_scripted_effect = { }
+erx_judge_fire_22_scripted_effect = { }
 
-judge_hire_23_scripted_effect = { }
-judge_fire_23_scripted_effect = { }
+erx_judge_hire_23_scripted_effect = { }
+erx_judge_fire_23_scripted_effect = { }
 
-judge_hire_24_scripted_effect = { }
-judge_fire_24_scripted_effect = { }
+erx_judge_hire_24_scripted_effect = { }
+erx_judge_fire_24_scripted_effect = { }
 
-judge_hire_25_scripted_effect = { }
-judge_fire_25_scripted_effect = { }
+erx_judge_hire_25_scripted_effect = { }
+erx_judge_fire_25_scripted_effect = { }
 
-judge_hire_26_scripted_effect = { }
-judge_fire_26_scripted_effect = { }
+erx_judge_hire_26_scripted_effect = { }
+erx_judge_fire_26_scripted_effect = { }
 
-judge_hire_27_scripted_effect = { }
-judge_fire_27_scripted_effect = { }
+erx_judge_hire_27_scripted_effect = { }
+erx_judge_fire_27_scripted_effect = { }
 
-judge_hire_28_scripted_effect = { }
-judge_fire_28_scripted_effect = { }
+erx_judge_hire_28_scripted_effect = { }
+erx_judge_fire_28_scripted_effect = { }
 
-judge_hire_29_scripted_effect = { }
-judge_fire_29_scripted_effect = { }
+erx_judge_hire_29_scripted_effect = { }
+erx_judge_fire_29_scripted_effect = { }
 
-judge_hire_30_scripted_effect = { }
-judge_fire_30_scripted_effect = { }
+erx_judge_hire_30_scripted_effect = { }
+erx_judge_fire_30_scripted_effect = { }
 
-judge_hire_31_scripted_effect = { }
-judge_fire_31_scripted_effect = { }
+erx_judge_hire_31_scripted_effect = { }
+erx_judge_fire_31_scripted_effect = { }
 
-judge_hire_32_scripted_effect = { }
-judge_fire_32_scripted_effect = { }
+erx_judge_hire_32_scripted_effect = { }
+erx_judge_fire_32_scripted_effect = { }
 
-judge_hire_33_scripted_effect = { }
-judge_fire_33_scripted_effect = { }
+erx_judge_hire_33_scripted_effect = { }
+erx_judge_fire_33_scripted_effect = { }
 
-judge_hire_34_scripted_effect = { }
-judge_fire_34_scripted_effect = { }
+erx_judge_hire_34_scripted_effect = { }
+erx_judge_fire_34_scripted_effect = { }
 
-judge_hire_35_scripted_effect = { }
-judge_fire_35_scripted_effect = { }
+erx_judge_hire_35_scripted_effect = { }
+erx_judge_fire_35_scripted_effect = { }
 
-judge_hire_36_scripted_effect = { }
-judge_fire_36_scripted_effect = { }
+erx_judge_hire_36_scripted_effect = { }
+erx_judge_fire_36_scripted_effect = { }
 
-judge_hire_37_scripted_effect = { }
-judge_fire_37_scripted_effect = { }
+erx_judge_hire_37_scripted_effect = { }
+erx_judge_fire_37_scripted_effect = { }
 
-judge_hire_38_scripted_effect = { }
-judge_fire_38_scripted_effect = { }
+erx_judge_hire_38_scripted_effect = { }
+erx_judge_fire_38_scripted_effect = { }
 
-judge_hire_39_scripted_effect = { }
-judge_fire_39_scripted_effect = { }
+erx_judge_hire_39_scripted_effect = { }
+erx_judge_fire_39_scripted_effect = { }
 
-judge_hire_40_scripted_effect = { }
-judge_fire_40_scripted_effect = { }
+erx_judge_hire_40_scripted_effect = { }
+erx_judge_fire_40_scripted_effect = { }
 
-judge_hire_41_scripted_effect = { }
-judge_fire_41_scripted_effect = { }
+erx_judge_hire_41_scripted_effect = { }
+erx_judge_fire_41_scripted_effect = { }
 
-judge_hire_42_scripted_effect = { }
-judge_fire_42_scripted_effect = { }
+erx_judge_hire_42_scripted_effect = { }
+erx_judge_fire_42_scripted_effect = { }
 
-judge_hire_43_scripted_effect = { }
-judge_fire_43_scripted_effect = { }
+erx_judge_hire_43_scripted_effect = { }
+erx_judge_fire_43_scripted_effect = { }

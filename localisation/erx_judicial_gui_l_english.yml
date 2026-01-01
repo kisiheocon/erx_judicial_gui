@@ -1,7 +1,7 @@
 ﻿l_english:
 judicial_gui_name_loc: "§MFederal Judiciary Of The United States§!"
 judicial_recently_appointed_trigger_tt: "Recently appointed a Judge, days left: §Y[?judicial_recently_appointed_flag:days_left|Y0]§!"
-judicial_recently_fired_trigger_tt: "Recently fired a Judge, days left: §Y[?judicial_recently_fired_flag:days_left|Y0]§!"
+judicial_recently_fired_trigger_tt: "Recently fired a Judge, days left: §Y[?erx_judicial_recently_fired_flag:days_left|Y0]§!"
 judge_missing_loc: "Missing"
 judge_sierra_blocked: "This Judge position is non-negotable!"
 judge_trigger_filled: "This Judge position is filled!"

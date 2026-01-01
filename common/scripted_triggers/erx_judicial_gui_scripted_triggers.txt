@@ -1,7 +1,7 @@
 #Trigger - Hiring a judge from list
 judges_list_button_click_enabled_scripted_trigger = {
 	if = { #Special for Sierra Commonwealth
-		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
+		limit = { check_variable = { erx_judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
 			tooltip = judge_sierra_blocked
 			always = no
@@ -9,7 +9,7 @@ judges_list_button_click_enabled_scripted_trigger = {
 	}
 	else = {
 		if = { #Already have a judge in selected Commonwealth
-			limit = { NOT = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } } }
+			limit = { NOT = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 1 } } }
 			custom_trigger_tooltip = {
 				tooltip = judge_trigger_filled
 				always = no
@@ -26,9 +26,9 @@ judges_list_button_click_enabled_scripted_trigger = {
 }
 
 #Trigger - Firing a judge from selected commonwealth
-judge_current_fire_button_click_enabled_scripted_trigger = {
+erx_judge_current_fire_button_click_enabled_scripted_trigger = {
 	if = { #Special for Sierra Commonwealth
-		limit = { check_variable = { judicial_gui_selected_com_var = 0 } }
+		limit = { check_variable = { erx_judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
 			tooltip = judge_sierra_blocked
 			always = no
@@ -36,14 +36,14 @@ judge_current_fire_button_click_enabled_scripted_trigger = {
 	}
 	else = {
 		if = { #Don't have a judge in selected Commonwealth
-			limit = { check_variable = { judicial_gui_com_judge_array^judicial_gui_selected_com_var = 1 } }
+			limit = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 1 } }
 			custom_trigger_tooltip = {
 				tooltip = judge_trigger_vacant
 				always = no
 			}
 		}
 		if = { #Recently fired a judge in 30 days
-			limit = { has_country_flag = judicial_recently_fired_flag }
+			limit = { has_country_flag = erx_judicial_recently_fired_flag }
 			custom_trigger_tooltip = {
 				tooltip = judicial_recently_fired_trigger_tt
 				always = no
