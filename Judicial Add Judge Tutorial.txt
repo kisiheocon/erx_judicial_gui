@@ -70,23 +70,23 @@ Current: Used to display the character's information when the judge is appointed
 List: Used to displayer the character's information when they are on the available-for-hire list
 
 For Current: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
-GetCurrentJudgeShortName:
+ERXGetCurrentJudgeShortName:
 text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_short_name }
 
-GetCurrentJudgeLongName:
+ERXGetCurrentJudgeLongName:
 text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_long_name }
 
-GetCurrentJudgeDesc
+ERXGetCurrentJudgeDesc
 text = { trigger = { check_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = 7 } } localization_key = judge_7_desc }
 
 For List: Add the new ID into the scripted loc with ctrl + C and ctrl + V with these loc keys
-GetJudgeShortName
+ERXGetJudgeShortName
 text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_short_name }
 
-GetJudgeLongName
+ERXGetJudgeLongName
 text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_long_name }
 
-GetJudgeDesc
+ERXGetJudgeDesc
 text = { trigger = { check_variable = { erx_judges_list_array^erx_judges_idx = 7 } } localization_key = judge_7_desc }
 
 ###Step 5: Add a modifier

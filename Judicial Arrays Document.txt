@@ -91,11 +91,11 @@ erx_judges_party_elites_array			#Elites
 erx_judges_party_ruler_array			#Ruler
 
 Loc Keys:
-party_name_people					#NWP	New World Party
-party_name_intellectuals			#TP		Torch Party
-party_name_elites					#CL		Citizen's League
-party_name_ruler					#GL		Granite Loyalist
-party_name_neutral	#When a character isn't assigned to a party it will default to this
+erx_party_name_people					#NWP	New World Party
+erx_party_name_intellectuals			#TP		Torch Party
+erx_party_name_elites					#CL		Citizen's League
+erx_party_name_ruler					#GL		Granite Loyalist
+erx_party_name_neutral	#When a character isn't assigned to a party it will default to this
 
 Example:
 -Add DeVito to ruler party affiliation:
@@ -107,10 +107,10 @@ add_to_array = { erx_judges_party_ruler_array = 3 } #3 is the ID of DeVito
 
 -If DeVito is in New World Party/People, give 30 political power:
 if = {
-	limit = { is_in_array = { party_name_people = 3 } } #3 is the ID of DeVito
+	limit = { is_in_array = { erx_party_name_people = 3 } } #3 is the ID of DeVito
 	add_political_power = 30
 }
 
 -Trigger require DeVito to be in Torch Party/Intellectuals:
-is_in_array = { party_name_intellectuals = 3 } #3 is the ID of DeVito
+is_in_array = { erx_party_name_intellectuals = 3 } #3 is the ID of DeVito
 

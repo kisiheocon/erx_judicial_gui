@@ -1,166 +1,167 @@
 ideas = {
 	hidden_ideas = {
-		judge_2_hidden_idea = {
+		erx_judge_1_hidden_idea = { }
+		erx_judge_2_hidden_idea = {
 			modifier = {
 				political_power_factor = -0.05
 				stability_factor = 0.03
 			}
 		}
-		judge_3_hidden_idea = {
+		erx_judge_3_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				political_power_factor = -0.1
 				resistance_damage_to_garrison = -0.1
 			}
 		}
-		judge_4_hidden_idea = {
+		erx_judge_4_hidden_idea = {
 			modifier = {
 				elites_drift = 0.02
 				caps_income_modifier = 0.15
 				consumer_goods_expected_value = -0.03
 			}
 		}
-		judge_5_hidden_idea = {
+		erx_judge_5_hidden_idea = {
 			modifier = {
 				people_drift = 0.04
 				stability_factor = 0.05
 				caps_income_modifier = -0.08
 			}
 		}
-		judge_6_hidden_idea = {
+		erx_judge_6_hidden_idea = {
 			modifier = {
 				people_drift = 0.02
 				monthly_population = 0.02
 				caps_income_modifier = -0.04
 			}
 		}
-		judge_7_hidden_idea = {
+		erx_judge_7_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				political_power_factor = 0.03
 				stability_factor = -0.02
 			}
 		}
-		judge_8_hidden_idea = {
+		erx_judge_8_hidden_idea = {
 			modifier = {
 				elites_drift = 0.04
 				stability_factor = 0.05
 				resistance_damage_to_garrison = 0.03
 			}
 		}
-		judge_9_hidden_idea = {
+		erx_judge_9_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				resistance_target = 0.1
 				caps_income_modifier = -0.1
 			}
 		}
-		judge_10_hidden_idea = {
+		erx_judge_10_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.03
 				political_power_factor = -0.03
 				resistance_decay = 0.03
 			}
 		}
-		judge_11_hidden_idea = {
+		erx_judge_11_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.04
 				political_power_factor = 0.06
 				resistance_damage_to_garrison = -0.05
 			}
 		}
-		judge_12_hidden_idea = {
+		erx_judge_12_hidden_idea = {
 			modifier = {
 				people_drift = 0.02
 				resistance_decay = 0.04
 				political_power_factor = -0.04
 			}
 		}
-		judge_13_hidden_idea = {
+		erx_judge_13_hidden_idea = {
 			modifier = {
 				elites_drift = 0.03
 				caps_income_modifier = 0.08
 				resistance_damage_to_garrison = 0.05
 			}
 		}
-		judge_14_hidden_idea = {
+		erx_judge_14_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.02
 				political_power_factor = 0.04
 				compliance_gain = -0.04
 			}
 		}
-		judge_15_hidden_idea = {
+		erx_judge_15_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				resistance_decay = -0.03
 				resistance_damage_to_garrison = 0.04
 			}
 		}
-		judge_16_hidden_idea = {
+		erx_judge_16_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.03
 				caps_income_modifier = -0.05
 				compliance_gain = 0.04
 			}
 		}
-		judge_17_hidden_idea = {
+		erx_judge_17_hidden_idea = {
 			modifier = {
 				people_drift = 0.04
 				political_power_factor = 0.02
 				stability_weekly  = -0.001
 			}
 		}
-		judge_18_hidden_idea = {
+		erx_judge_18_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.03
 				political_power_factor = 0.03
 				stability_weekly  = -0.001
 			}
 		}
-		judge_19_hidden_idea = {
+		erx_judge_19_hidden_idea = {
 			modifier = {
 				elites_drift = 0.02
 				caps_income_modifier = 0.05
 				compliance_gain = -0.02
 			}
 		}
-		judge_20_hidden_idea = {
+		erx_judge_20_hidden_idea = {
 			modifier = {
 				people_drift = 0.03
 				stability_weekly  = 0.002
 				political_power_factor = -0.04
 			}
 		}
-		judge_21_hidden_idea = {
+		erx_judge_21_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.03
 				political_power_factor = 0.05
 				conscription_factor = -0.1
 			}
 		}
-		judge_22_hidden_idea = {
+		erx_judge_22_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.04
 				compliance_gain = 0.04
 				political_power_factor = -0.03
 			}
 		}
-		judge_23_hidden_idea = {
+		erx_judge_23_hidden_idea = {
 			modifier = {
 				people_drift = 0.08
 				political_power_factor = -0.15
 				stability_weekly  = 0.04
 			}
 		}
-		judge_24_hidden_idea = {
+		erx_judge_24_hidden_idea = {
 			modifier = {
 				elites_drift = 0.06
 				caps_income_modifier = 0.15
 				compliance_gain = -0.08
 			}
 		}
-		judge_25_hidden_idea = {
+		erx_judge_25_hidden_idea = {
 			modifier = {
 				opinion_gain_monthly_same_ideology_factor = 0.03
 				resistance_activity = -0.08
@@ -168,76 +169,76 @@ ideas = {
 				stability_factor = -0.02
 			}
 		}
-		judge_26_hidden_idea = {
+		erx_judge_26_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.04
 				stability_weekly  = -0.01
 				compliance_gain = 0.04
 			}
 		}
-		judge_27_hidden_idea = {
+		erx_judge_27_hidden_idea = {
 			modifier = {
 				people_drift = 0.03
 				political_power_factor = 0.03
 				compliance_gain = -0.03
 			}
 		}
-		judge_28_hidden_idea = {
+		erx_judge_28_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				resistance_damage_to_garrison = -0.04
 				political_power_factor = -0.02
 			}
 		}
-		judge_29_hidden_idea = {
+		erx_judge_29_hidden_idea = {
 			modifier = {
 				elites_drift = 0.02
 				resistance_decay = -0.03
 				caps_income_modifier = -0.07
 			}
 		}
-		judge_30_hidden_idea = {
+		erx_judge_30_hidden_idea = {
 			modifier = {
 				opinion_gain_monthly_same_ideology_factor = 0.02
 				recruitable_population_factor = 0.05
 			}
 		}
-		judge_31_hidden_idea = {
+		erx_judge_31_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.04
 				resistance_decay = 0.03
 				consumer_goods_factor = 0.03
 			}
 		}
-		judge_32_hidden_idea = {
+		erx_judge_32_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.02
 				starting_compliance = 0.05
 				political_power_factor = -0.04
 			}
 		}
-		judge_33_hidden_idea = {
+		erx_judge_33_hidden_idea = {
 			modifier = {
 				people_drift = 0.03
 				stability_weekly  = -0.02
 				offensive_war_stability_factor = 0.04
 			}
 		}
-		judge_34_hidden_idea = {
+		erx_judge_34_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.03
 				political_power_factor = -0.02
 				monthly_population = 0.03
 			}
 		}
-		judge_35_hidden_idea = {
+		erx_judge_35_hidden_idea = {
 			modifier = {
 				elites_drift = 0.06
 				caps_income_modifier = 0.12
 				stability_factor = -0.08
 			}
 		}
-		judge_36_hidden_idea = {
+		erx_judge_36_hidden_idea = {
 			modifier = {
 				opinion_gain_monthly_same_ideology_factor = 0.04
 				political_power_factor = 0.04
@@ -245,49 +246,49 @@ ideas = {
 				stability_factor = -0.02
 			}
 		}
-		judge_37_hidden_idea = {
+		erx_judge_37_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.04
 				war_support_factor = 0.03
 				stability_factor = -0.02
 			}
 		}
-		judge_38_hidden_idea = {
+		erx_judge_38_hidden_idea = {
 			modifier = {
 				people_drift = 0.03
 				resistance_damage_to_garrison = -0.04
 				stability_factor = -0.02
 			}
 		}
-		judge_39_hidden_idea = {
+		erx_judge_39_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.03
 				compliance_gain = 0.02
 				stability_factor = -0.02
 			}
 		}
-		judge_40_hidden_idea = {
+		erx_judge_40_hidden_idea = {
 			modifier = {
 				intellectuals_drift = 0.04
 				resistance_decay = -0.03
 				stability_factor = -0.02
 			}
 		}
-		judge_41_hidden_idea = {
+		erx_judge_41_hidden_idea = {
 			modifier = {
 				elites_drift = 0.03
 				caps_income_modifier = 0.11
 				stability_factor = -0.02
 			}
 		}
-		judge_42_hidden_idea = {
+		erx_judge_42_hidden_idea = {
 			modifier = {
 				ruler_drift = 0.04
 				starting_compliance = 0.02
 				stability_factor = -0.02
 			}
 		}
-		judge_43_hidden_idea = {
+		erx_judge_43_hidden_idea = {
 			modifier = {
 				opinion_gain_monthly_same_ideology_factor = 0.04
 				political_power_factor = -0.02

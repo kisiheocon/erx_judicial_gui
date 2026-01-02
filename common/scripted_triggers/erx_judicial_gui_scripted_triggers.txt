@@ -1,5 +1,5 @@
 #Trigger - Hiring a judge from list
-judges_list_button_click_enabled_scripted_trigger = {
+erx_judges_list_button_click_enabled_scripted_trigger = {
 	if = { #Special for Sierra Commonwealth
 		limit = { check_variable = { erx_judicial_gui_selected_com_var = 0 } }
 		custom_trigger_tooltip = {
@@ -16,7 +16,7 @@ judges_list_button_click_enabled_scripted_trigger = {
 			}
 		}
 		if = { #Recently appointed a judge in 30 days
-			limit = { has_country_flag = judicial_recently_appointed_flag }
+			limit = { has_country_flag = erx_judicial_recently_appointed_flag }
 			custom_trigger_tooltip = {
 				tooltip = judicial_recently_appointed_trigger_tt
 				always = no

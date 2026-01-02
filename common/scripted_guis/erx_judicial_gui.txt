@@ -31,7 +31,7 @@ scripted_gui = {
 			judge_current_fire_button_click = { erx_judge_current_fire_button_click_scripted_effect = yes }
 		}
 		triggers = {
-			judges_list_button_click_enabled = { judges_list_button_click_enabled_scripted_trigger = yes }
+			judges_list_button_click_enabled = { erx_judges_list_button_click_enabled_scripted_trigger = yes }
 			judge_current_fire_button_click_enabled = { erx_judge_current_fire_button_click_enabled_scripted_trigger = yes }
 		}
 		dynamic_lists = {

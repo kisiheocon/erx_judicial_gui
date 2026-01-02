@@ -53,19 +53,19 @@ erx_clear_com_judges = {
 erx_judges_list_button_click_scripted_effect = {
 	meta_effect = {
 		text = {
-			add_ideas = judge_[JUDGE_ID]_hidden_idea
+			add_ideas = erx_judge_[JUDGE_ID]_hidden_idea
 			hidden_effect = { erx_judge_hire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when hired
 		}
 		JUDGE_ID = "[?erx_judges_list_array^erx_judges_idx]"
 	}
 	if = {
-		limit = { judges_list_button_click_enabled_scripted_trigger = no }
+		limit = { erx_judges_list_button_click_enabled_scripted_trigger = no }
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 
 	set_variable = { erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var = erx_judges_list_array^erx_judges_idx }
 	remove_from_array = { erx_judges_list_array = erx_judges_list_array^erx_judges_idx }
-	set_country_flag = { flag = judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
+	set_country_flag = { flag = erx_judicial_recently_appointed_flag days = 5 value = 1 } #Flag for cooldown
 }
 
 #Fake Effect - Tooltip for Current Judge Modifier
@@ -75,7 +75,7 @@ erx_judges_list_button_alt_right_click_scripted_effect = {
 			text = {
 				if = {
 					limit = { NOT = { check_variable = { [JUDGE_ID] = 1 } } }
-					add_ideas = judge_[JUDGE_ID]_hidden_idea
+					add_ideas = erx_judge_[JUDGE_ID]_hidden_idea
 				}
 			}
 			JUDGE_ID = "[?erx_judicial_gui_com_judge_array^erx_judicial_gui_selected_com_var]"
@@ -89,7 +89,7 @@ erx_judge_current_fire_button_click_scripted_effect = {
 		text = {
 			if = {
 				limit = { NOT = { check_variable = { [JUDGE_ID] = 1 } } }
-				remove_ideas = judge_[JUDGE_ID]_hidden_idea
+				remove_ideas = erx_judge_[JUDGE_ID]_hidden_idea
 				hidden_effect = { erx_judge_fire_[JUDGE_ID]_scripted_effect = yes } #For unique judges with special effects when fired
 				if = {
 					limit = { erx_judge_current_fire_button_click_enabled_scripted_trigger = no }
@@ -110,7 +110,7 @@ erx_judge_hire_1_scripted_effect = { } #Ignore#
 erx_judge_fire_1_scripted_effect = { } #Ignore#
 
 erx_judge_hire_2_scripted_effect = { #Premade Scripted Effect For Hiring Talbot in Sierra Commonwealth
-	add_ideas = judge_2_hidden_idea
+	add_ideas = erx_judge_2_hidden_idea
 	set_variable = { erx_judicial_gui_com_judge_array^0 = 2 }
 	remove_from_array = { erx_judges_list_array = 2 }
 }
